@@ -1,11 +1,986 @@
 ---
-title: "uce2023-modulo1"
+title: "Estadística aplicada con R"
+subtitle: "Módulo 1: Generalidades e Introducción a R"
+title-slide-attributes:
+  data-background-image: images/logo.jpeg
+  data-background-size: contain
+  data-background-opacity: "0.2"
+author: 
+  - name: Mauricio Moreno, PhD
+    affiliations:
+      - Científico Bioestadístico en Bayer AG
+logo: images/logo.jpeg
+format: 
+  revealjs:
+    slide-number: true
+    width: 1366
+    preview-links: auto
+    touch: true
+    chalkboard:
+      theme: whiteboard
+      boardmarker-width: 4
+      buttons: false
+    revealjs-plugins:
+      - pointer
+editor: visual
 ---
 
-This is a Quarto website.
+# ¡Conozcámonos! {transition="slide"}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Acerca de mí 
 
-```{r}
-1 + 1
+::: columns
+::: {.column width="30%"}
+::: {layout="[[-1], [1], [-1]]"}
+![](images/pic.png){fig-align="center" width="300"}
+:::
+:::
+
+::: {.column width="70%"}
+-   Ingeniero en Biotecnología, ESPE
+-   Máster en Estadística, Katholieke Universiteit Leuven
+-   Doctor en Bioinformática, Jacobs University Bremen
+-   He trabajado cómo consultor freelance, maestro de Química, analista estadístico gubernamental, doctorante y postdoc
+-   Tengo 10 años de experiencia en programación estadística, y actualmente soy científico bioestadístico en Bayer Crop Science en la división de Field Solutions Technologies
+:::
+:::
+
+## Acerca del curso
+
+::: incremental
+-   Objetivos:
+
+    -   Dar una introducción práctica al lenguaje de programación estadística R
+
+    -   Cubrir metodologías básicas de análisis estadístico con su interpretación y visualización de resultados
+
+    -   Desarrollar en el participante las destrezas necesarias para entender, interpretar y comunicar los resultados estadísticos de sus análisis
+
+-   Lo que espero de mi audiencia
+
+    -   Entusiasmo, creatividad y respeto
+:::
+
+## Acerca del curso {visibility="uncounted"}
+
+::: incremental
+-   **Pre-requisitos:**
+
+    -   Conocimientos básicos de estadística
+
+    -   Conexión estable a internet
+
+-   **Materiales:**
+
+    -   Las presentaciones y ciertas tablas de datos se encuentran en el [sitio web del curso](https://mmorenozam.github.io/est-apl-uce-2023-website/){target="_blank"}, otros datos utilizados serán presentados a lo largo del curso
+
+-   **Canales de comunicación:**
+
+    -   Plataforma ZULIP
+
+    -   Email del instructor: mmorenozambrano\@gmail.com
+:::
+
+## Acerca del curso {visibility="uncounted"}
+
+::: incremental
+-   **Estructura de cada sesión:**
+
+    -   50% de presentaciones y demostraciones
+
+    -   50% de ejercicios prácticos y aplicación de conocimiento adquirido
+
+    -   Un receso de 10 minutos en la mitad de cada sesión
+
+-   **Trabajo final del curso:**
+
+    -   Realización de un reporte estadístico
+
+    -   La aprobación del curso se conseguirá con una nota mínima de 7/10
+:::
+
+## Sobre el trabajo final {.smaller}
+
+::: incremental
+-   La estructura básica que espero de un reporte estadístico es la mínima establecida por el método científico (título, resumen, objetivos, metodología, resultados, conclusiones y biobliografía).
+
+-   Lo importante es brindar al participante el conocimiento necesario para redactar resultados estadísticos de una manera entendible para el público en general.
+
+-   **NO ES NECESARIO** seguir ninguna norma de citación biobliográfica (o sección de biobliografía de ser el caso).
+
+-   **ES IMPRESCINDIBLE** el presentar el código de R (script) usado en el reporte a manera de Apéndice.
+
+-   Envío del reporte final debe ser hasta antes de las 23H59 GMT-5 (hora de Ecuador continental) del 7 de abril del año en curso en formato pdf al correo electrónico del instructor (mmorenozambrano\@gmail.com).
+
+-   La nota del reporte será entregada de manera individual a cada participante hasta el 14 de abril del año en curso al correo del cual fue remitido el mismo.
+
+-   El instructor entregará el reporte final de notas a la Coordinación de Educación Continua de la Facultad de Ciencias Biológicas de la UCE el 18 de abril.
+:::
+
+## Recomendaciones 
+
+::: incremental
+-   Comunícame si tu ordenador usa un sistema operativo distinto a Windows (MacOS o Linux)
+
+-   De ser posible, sigue las sesiones en una tablet/otro monitor/otro ordenador (o practica el dominio de ALT+TAB)
+
+-   Aliento el uso de datos propios (¡este es un curso mayoritariamente práctico!)
+
+-   No existe pregunta más tonta que la que no se hace
+
+-   No sentirse intimidado por recursos extras y complementarios mayoritariamente en idioma inglés
+:::
+
+## Recomendaciones {visibility="uncounted"}
+
+::: incremental
+-   Durante el curso se espera que sigas y reproduzcas en tu ordenador en tiempo real el código de R que escribiré para cada ejemplo. ¡**NO DESESPERES** si no alcanzas mi ritmo! Cada sesión es grabada y la subiré inmediatamente a un canal privado de YouTube para que puedas recurrir al mismo de ser necesario.
+
+-   Nuevamente, por si tienes dudas e inquietudes, puedes comunicarte conmigo mediante los canales de comunicación anteriormente mencionados.
+:::
+
+# Introducción a R {transition="slide"}
+
+## Una muy breve historia de R {.smaller}
+
+::: columns
+::: {.column width="20%"}
+::: {layout="[[-1], [1], [-1]]"}
+![](images/rlogo.png){width="129"}
+:::
+:::
+
+::: {.column width="80%"}
+::: incremental
+-   1991: Robert Gentleman y Ross Ihaka (Universidad de Auckland, NZ) empiezan a desarrollar R
+-   1995: R se convierte en un proyecto *open-source*
+-   1997: Se establecen el *Comprehensive R Archive Network* (CRAN) y el R *core group*
+-   2000: Lanzamiento de R versión 1.0.0
+-   2003: Se establece la R *Foundation*
+-   2004: Se lleva a cabo la primera conferencia UseR! en Viena, Austria
+-   2006: Se edita el primer número del *R Journal*
+-   2011: Lanzamiento de RStudio versión beta
+-   2016: Lanzamiento de RStudio versión 1.0.0
+-   2017: CRAN alcanza más de 10000 librerías públicas
+:::
+:::
+:::
+
+## ¿Por qué R? {.smaller}
+
+::: columns
+::: {.column width="50%"}
+::: {layout="[[-1], [1], [-1]]"}
+![[Uso de R comparado con SAS, SPSS y JMP en Ecología (Tomado de Touchon y McCoy (2016), *Ecosphere* **7** (8))](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.1394){target="_blank"}](images/use.jpg){fig-align="center"}
+:::
+:::
+
+::: {.column width="50%"}
+::: incremental
+-   Su uso se va extendiendo cada vez más en el ámbito académico (e industrial)
+
+-   Software libre
+
+-   Amplio abanico de librerías (19223 al 19.02.2023)
+
+-   ¡Basta comunidad de R enthusiasts!
+
+-   Versátil:
+
+    -   Gráficos listos para publicación
+
+    -   Generación de reportes, páginas web, presentaciones y libros en distintos formatos (rmarkdown, blogdown, quarto)
+
+    -   Construcción de aplicaciones interactivas para visualización/análisis de datos (rshiny)
+:::
+:::
+:::
+
+## Instalación de R {.smaller}
+
+::: incremental
+::: r-fit-text
+1.  Ingresa a [https://cran.r-project.org/bin/windows/base/](https://cran.r-project.org/bin/windows/base/){target="_blank"}
+
+2.  Descarga la última versión disponible de R
+
+3.  Ejecuta el archivo .exe para iniciar la instalación
+
+    -   Recomendado: No cambies el directorio sugerido por el asistente de instalación
+
+    -   Opcional: No instalar traducciones de los mensajes de R
+:::
+:::
+
+. . .
+
+![](images/trans.png){fig-align="center" width="364"}
+
+## Instalación de RStudio 
+
+::: incremental
+1.  Ingresa a [https://posit.co/download/rstudio-desktop/#download](https://posit.co/download/rstudio-desktop/#download){target="_blank"}
+2.  Click en la opción de instalar "RStudio Desktop for Windows"
+3.  Ejecuta el archivo .exe para iniciar la instalación
+    -   No cambies las sugerencias pre-establecidas para la instalación
+    -   En el caso de tener una versión de R anterior a la previamente instalada, es probable que la primera vez que abramos RStudio, este nos pregunte que version queremos usar (recomendado usar la última versión de R)
+:::
+
+## Instalación de Rtools (opcional) {.smaller}
+
+::: incremental
+![](images/warning.png)
+
+-   Rtools es una cadena de herramientas para compilar librerías de R en Windows basada en lenguajes C/C++/Fortran.
+
+-   No es necesario en sistemas operativos de Apple o basados en Unix (Linux).
+
+-   Se puede usar R en Windows sin necesidad de Rtools por la existencia de versiones de librerías en formato binario (ya previamente compiladas).
+
+-   Las ventajas de contar con Rtools:
+
+    -   Posibilidad de actualizar librerías a sus mas recientes versiones.
+
+    -   Compilación de versiones beta de librerías experimentales aun no disponibles en CRAN.
+
+    -   Uso de librerías específicas que necesitan de Rtools para su funcionamiento (ej. rstan)
+
+-   En caso de que desees instalar Rtools, sigue las instrucciones en este link [https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html](https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html){target="_blank"}
+:::
+
+## GUI RStudio 
+
+![](images/gui.png){fig-align="center"}
+
+## GUI RStudio {.smaller visibility="uncounted"}
+
+1.  Editor: ventana donde escribimos código. Puede contener tantas subpestanas como scripts de R tengamos abiertos. No se ejecuta a no ser que ordenemos a R hacerlo.
+
+2.  Ambiente/historia de trabajo: nos permite visualizar los objetos que vayamos creando durante la ejecución del código así como el orden de los comandos ejecutados.
+
+3.  Consola: o terminal de R, es la interface directa de RStudio con R. En esta podemos ejecutar comandos línea por línea y visualizar los resultados de la ejecución de lo que escribamos en el editor.
+
+4.  Varias subpestanas, de importancia:
+
+    -   Plots: donde se producirán los plots que ejecutemos
+
+    -   Packages: listado de librerías instaladas
+
+    -   Help: ayuda de R (activada por comando o busqueda manual)
+
+    -   Viewer: crea una ventana fuera del ambiente de RStudio para visualizar gráficos
+
+## Tipos de objetos en R
+
+::: incremental
+-   En R, los objetos son distintas formas de almacenar datos/información
+
+-   Existen varios tipos de objetos en R, los mas básicos:
+
+    -   **Vectores**
+
+    -   **Tablas de datos**
+
+    -   **Listas**
+
+    -   Matrices
+:::
+
+## Vectores
+
+-   Un vector es un contenedor de elementos de la misma clase
+
+```{r echo=T}
+#| include: true
+#| code-line-numbers: "1|2|3|4"
+vector_a <- c(1, 2, 3)                               # números enteros/reales (num)
+vector_b <- c("uno", "dos", "tres")                  # caracteres (chr)
+vector_c <- as.Date(c("2000-01-01", "2000-01-02"))   # fechas (Date)
+vector_d <- as.factor(c("A", "B", "C"))              # factores (Factor)
 ```
+
+. . .
+
+-   Sin embargo, operaciones como estas son válidas
+
+```{r echo=T}
+#| include: true
+c(vector_a, vector_b)
+c(vector_a, vector_c)
+c(vector_b, vector_d)
+```
+
+## Vectores {visibility="uncounted" auto-animate="true"}
+
+::: incremental
+-   Cuando elementos de distinta clase son almacenados en un vector, R los transforma
+
+-   ¿Cómo podemos saber la clase de un objeto de R?
+:::
+
+. . .
+
+```{r echo=T}
+vector_e <- c("1", "2", 3, 4)
+```
+
+## Vectores {visibility="uncounted" auto-animate="true"}
+
+-   Cuando elementos de distinta clase son almacenados en un vector, R los transforma
+
+-   ¿Cómo podemos saber la clase de un objeto de R?
+
+```{r echo=T}
+vector_e <- c("1", "2", 3, 4)
+str(vector_e)
+```
+
+::: incremental
+-   `str` es un comando base de R. Es el comando mas simple para explorar la clase de un objeto.
+
+-   Pero ya hablaremos de comandos y librerías en breve...
+:::
+
+## Tablas de datos {auto-animate="true"}
+
+::: incremental
+-   Arreglo bidimensional que permite almacenar datos de distintas clases
+
+-   ¿Cómo creo tablas de datos en R?
+:::
+
+. . .
+
+```{r echo=T}
+tabla <- data.frame(variable1 = c(1, 2, 3, 4, 5),
+                    variable2 = c("A", "B", "C", "D", "E"))
+```
+
+## Tablas de datos {visibility="uncounted" auto-animate="true"}
+
+-   Arreglo bidimensional que permite almacenar datos de distintas clases
+
+-   ¿Cómo creo tablas de datos en R?
+
+```{r echo=T}
+tabla <- data.frame(variable1 = c(1, 2, 3, 4, 5),
+                    variable2 = c("A", "B", "C", "D", "E"))
+
+tabla
+```
+
+::: incremental
+-   ¿Cómo importo tablas de datos en R? (mediante la librería de base, o librerías externas)
+:::
+
+## Listas {auto-animate="true"}
+
+::: incremental
+-   Arreglo multidimensional de elementos no necesariamente del mismo tipo ni misma longitud
+:::
+
+. . .
+
+```{r echo=T}
+lista <- list(lista1 = vector_a,
+              lista2 = tabla)
+```
+
+## Listas {visibility="uncounted" auto-animate="true"}
+
+-   Arreglo multidimensional de elementos no necesariamente del mismo tipo ni misma longitud.
+
+```{r echo=T}
+lista_a <- list(lista1 = vector_a,
+                lista2 = tabla)
+lista_a
+```
+
+## Indexación
+
+::: incremental
+-   Todos los elementos de un objeto de R tienen un índice.
+
+-   Esto permite el acceder a elementos específicos de un objeto mediante su índice.
+
+-   ¿Cuál es el segundo elemento del `vector_a`?
+:::
+
+. . .
+
+```{r echo=T}
+vector_a[2]
+```
+
+. . .
+
+-   ¿Cuál es el valor en la columna 1, fila 3 de la tabla de datos `tabla`?
+
+. . .
+
+```{r echo=T}
+tabla[3,1] # [fila, columna]
+```
+
+## Indexación {visibility="uncounted"}
+
+-   ¿Cuál es el segundo elemento de la lista `lista_a`?
+
+. . .
+
+```{r echo=T}
+lista_a[[2]]
+```
+
+. . .
+
+-   ¿Cuál es el valor en la columna 1, fila 3 de la tabla de datos que es el segundo elemento de la lista `lista_a`?
+
+. . .
+
+```{r echo=T}
+lista_a[[2]][3,1]
+```
+
+## Librerías de R
+
+::: incremental
+-   Una librería es un conjunto de funciones que son invocadas mediante sus nombres exactos (comandos) y ejecutadas de acuerdo a los argumentos que requieran
+
+    -   En los ejemplos anteriores: `as.Date`, `as.factor`, `str`, y `data.frame` son comandos de la librería base de R
+
+-   Existen dos tipos de librerías en R
+
+    -   Librerías base de R (disponibles desde todo inicio de sesión)
+
+    -   Librerías externas de R (requieren ser instaladas una única vez y llamadas previamente al análisis)
+:::
+
+## Instalación de librerías en R
+
+::: incremental
+-   Existen dos formas de instalar librerías en R
+
+    1.  Mediante GUI de RStudio
+
+    2.  Mediante el editor o la consola, ventanas 1 y 3 de RStudio, respectivamente
+
+-   En este curso nos enfocaremos en hacer mínimo uso de la GUI. El motivo: mientras menos dependemos de la GUI, nuestros códigos (scripts) serán mas reproducibles e independientes de nuestra intervención cada vez que sean ejecutados.
+:::
+
+## Instalación y llamado de librerías en R {visibility="uncounted"}
+
+::: incremental
+-   El comando base de R para instalar librerías es `install.packages`
+
+-   Puede instalar una librería a la vez:
+:::
+
+. . .
+
+```{r echo=T, eval=F}
+install.packages("ggplot2")
+```
+
+::: incremental
+-   O mas de una librería a la vez:
+:::
+
+. . .
+
+```{r echo=T, eval=F}
+install.packages(c("palmerpenguins","fdth", "flextable", "readxl", "modeest"))
+```
+
+. . .
+
+-   Para llamar (cargar) una librería en R se usa el comando base `library()`
+
+. . .
+
+```{r echo=T, eval=F}
+library(ggplot2)
+```
+
+## Importar tablas de datos a R
+
+::: incremental
+-   La librería base de R permite importar datos de archivos de texto (.txt) y archivos de valores separados por comas (.csv) mediante los comandos `read.table()` y `read.csv()` respectivamente.
+
+-   Pero en la realidad, la mayoría de personas usamos actualmente Excel para llevar control de nuestros datos. En R, podemos importar datos de Excel mediante la librería `readxl`:
+:::
+
+. . .
+
+```{r echo=T, eval=F}
+#| code-line-numbers: "1|2"
+library(readxl)                           # invocamos la librería
+rot_berlin <- read_excel(file.choose())   # creamos un objeto (tabla de datos) y llamamos la función read_excel
+
+```
+
+::: incremental
+-   ¡Esta opción no es óptima!
+:::
+
+## Importar tablas de datos a R {visibility="uncounted"}
+
+::: incremental
+-   Idealmente tus códigos (scripts) deben ser lo mas posiblemente reproducibles. Para comenzar, te doy las siguientes recomendaciones:
+
+    1.  Crea un folder para cada proyecto
+
+    2.  En este folder copia los archivos de Excel relacionados
+
+    3.  Crea dentro de este folder un script de R, ejemplo "sesion1.R"
+
+    4.  El primer paso en este script, es indicarle a R el directorio de trabajo (con el comando base `setwd()`)
+
+    5.  ¡Estamos entonces listos para cualquier análisis que deseemos hacer!
+:::
+
+## Importar tablas de datos a R {visibility="uncounted" auto-animate="true"}
+
+```{r echo=T, eval=T}
+#| code-line-numbers: "1|2|3"
+setwd("C:/Users/mmore/Documents/cursos_uce_2023/datos/") # directorio de trabajo
+library(readxl)                           # invocamos la librería
+rot_berlin <- read_excel("rotXLS.xlsx")   # creamos un objeto (tabla de datos) y llamamos la función read_excel
+```
+
+## Importar tablas de datos a R {visibility="uncounted" auto-animate="true"}
+
+```{r echo=T, eval=T}
+setwd("C:/Users/mmore/Documents/cursos_uce_2023/datos/") 
+library(readxl)                           # invocamos la librería
+rot_berlin <- read_excel("rotXLS.xlsx")   # creamos un objeto (tabla de datos) y llamamos la función read_excel
+head(rot_berlin)                          # chequeamos que nuestro archivo se halla importado correctamente
+```
+
+## ¡A tener en cuenta antes de continuar!
+
+::: incremental
+-   Antes de sumergirnos en el uso de R, es importante definir algunas cosas:
+
+    -   Para asignar contenido (valores) a un objeto, los operadores de R son `<-` o `=`
+
+    -   R es sensible a mayúsculas y minúsculas (`Tabla` ≠ `tabla`)
+
+    -   R no es sensible a indentaciones (como Python)
+:::
+
+. . .
+
+```{r echo=T, eval=F}
+for (i in 1:20){
+  x = 0 + i
+  print(x)
+}
+```
+
+. . .
+
+```{r echo=T, eval=F}
+for (i in 1:20){
+x = 0 + i
+print(x)
+}
+```
+
+## ¡A tener en cuenta antes de continuar! {visibility="uncounted"}
+
+::: incremental
+-   Una buena práctica de programación es comentar qué hace tu código con el símbolo `#`
+:::
+
+. . .
+
+```{r echo=T, eval=F, error=T}
+for (i in 1:20){ # este loop imprime números del 1 al 20 
+  x = 0 + i
+  print(x)
+}
+```
+
+::: incremental
+-   Podemos también comentar líneas de código. Al comentarlas, estas no se ejecutarán (un atajo es seleccionar las líneas de código a comentar, y presionar al mismo tiempo "Ctrl + shift + c")
+:::
+
+. . .
+
+```{r echo=T, eval=F, error=T}
+# Este loop quizá me sirva después, lo comento
+# for (i in 1:20){ # este loop imprime números del 1 al 20
+#   x = 0 + i
+#   print(x)
+# }
+```
+
+## ¡A tener en cuenta antes de continuar! {visibility="uncounted"}
+
+::: incremental
+-   Es impráctico y quizá imposible memorizar los argumentos de las cientos de funciones de R. Para ello contamos con la ayuda de R que tiene la siguiente sintaxis `?nombre_de_la_función`:
+:::
+
+. . .
+
+```{r echo=T, eval=F, error=T}
+?print()
+```
+
+. . .
+
+![](images/help.png){fig-align="center" width="611"}
+
+## ¡A tener en cuenta antes de continuar! {visibility="uncounted"}
+
+::: incremental
+-   R **NO** reconoce nombres de objetos que comiencen con un número, o nombres que contengan espacios vacíos
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+1x <- 1
+```
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+x y <- 1
+```
+
+::: incremental
+Cuando R importa tablas de datos, si encuentra nombres de columnas con números como el primer caracter, o con espacios vacíos dentro del mismo, reformatea automáticamente dichos valores.
+:::
+
+## ¡A tener en cuenta antes de continuar! {visibility="uncounted"}
+
+::: incremental
+-   Existen varias formas de correr tu código en R
+
+    -   Con el ícono "Run" en la esquina superior derecha de la Ventana del editor.
+
+    -   Desde una ventana del prompt de Windows (usuarios intermedios y avanzados).
+
+    -   Y mi preferida: el atajo "Ctrl + Enter". Esta última tiene la ventaja de correr línea por línea el código y también de correr únicamente sobre líneas previamente seleccionadas.
+:::
+
+## Operaciones estadísticas básicas
+
+::: incremental
+-   Media aritmética
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+x <- c(6.5, 5.5, 8.9, 10.5, 8.7, 6.9, 5.9, 6.5, 4.7, 5.6, 4.8, 8.9, 9.9, 10.7, 5.3)
+mean(x)
+```
+
+::: incremental
+-   Mediana
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+median(x)
+```
+
+::: incremental
+-   Moda (R no tiene una función base para la moda, una solución es la librería `moodest`)
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+library(modeest)
+mlv(x, method = "mfv")
+```
+
+## Operaciones estadísticas básicas {visibility="uncounted"}
+
+::: incremental
+-   Desviación estándar
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+sd(x)
+```
+
+::: incremental
+-   Varianza
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+var(x)
+(sd(x))^2
+```
+
+::: incremental
+-   Cuartiles
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+quantile(x)
+```
+
+## Ejercicio 1.1
+
+El siguiente vector contiene dos valores perdidos `NA`. Las mayoría de funciones en R no lidian con datos perdidos a menos que les sea explícitamente indicado. Por medio de la ayuda de R (por ejemplo, ingresa `?mean()` en la consola) encuentra la manera de indicarle a R que ignore los `NA` y realice los cálculos de la media aritmética, la mediana, la moda, la desviación estándar, la varianza y los cuartiles usando las funciones anteriormente enunciadas. 
+
+```{r echo=T, eval=F, error=T}
+
+ej11 <- c(108.5, 75.3, 67.5, 93.6, 153.8, 113.9, NA, 133.8, 47.8, 71.1, NA)
+
+```
+
+**Tip: basta con que veas la ayuda de una sola función para revisar el argumento que tienes que modificar. El mismo argumento es común a todas las demas funciones**
+
+## Estadísticos descriptivos y tablas de frecuencia
+
+::: columns
+::: {.column .fragment width="80%"}
+
+Para ilustrar esta sección, utilizaremos la base de datos de "Palmer penguins":
+
+-   Los datos de Palmer Penguins fueron recolectados y puestos a disposición del público en general por la Dr. Kristen Gorman (estación Palmer, Antártida) y se encuentran disponibles en la librería `palmerpenguins`.
+
+![](images/penguins.png){fig-align="center" width="400"}
+
+
+:::
+
+::: {.column width="20%"}
+::: {layout="[[-1], [1], [-1]]"}
+![](images/palmeer.png){fig-align="center"}
+:::
+:::
+:::
+
+## Estadísticos descriptivos
+
+::: incremental
+La forma mas sencilla de calcular los estadísticos descriptivos de una tabla de datos es usando la función base `summary()`
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+library(palmerpenguins)
+summary(penguins)
+```
+
+## Tablas de frecuencia
+
+::: incremental
+-   Existen dos formas de crear tablas de frecuencia:
+
+    -   A partir de variables categóricas
+
+    -   Categorizando una variable continua
+
+-   Usualmente se presentan:
+
+    -   Frecuencia absoluta: número de observaciones por categoría
+
+    -   Frecuencia acumulada: suma de frecuencias absolutas
+
+    -   Frecuencia relativa: frecuencia absoluta/total de observaciones
+
+    -   Frecuencia relativa acumulada: suma de frecuencias relativas
+:::
+
+## Tablas de frecuencia {visibility="uncounted" auto-animate="true"}
+
+::: incremental
+-   A partir de una variable categórica
+:::
+
+. . .
+
+```{r echo=T, eval=T}
+#| code-line-numbers: "1|2"
+library(fdth)                     # ftdh es una librería que nos permite calcular tablas de frecuencia
+attach(penguins)                  # attach es un comando que convierte las columnas en objetos
+```
+
+## Tablas de frecuencia {visibility="uncounted" auto-animate="true"}
+
+-   A partir de una variable categórica
+
+```{r echo=T, eval=T}
+#| code-line-numbers: "3"
+library(fdth)                   # fdth es una librería que nos permite calcular tablas de frecuencia
+attach(penguins)                # attach es un comando que convierte las columnas en objetos
+head(penguins)                  # le damos un vistazo a las variables (columnas)
+```
+
+## Tablas de frecuencia {visibility="uncounted" auto-animate="true"}
+
+-   A partir de una variable categórica
+
+```{r echo=T, eval=T}
+#| code-line-numbers: "3"
+library(fdth)                   # fdth es una librería que nos permite calcular tablas de frecuencia
+attach(penguins)                # attach es un comando que convierte las columnas en objetos
+tabla_frec1 <- fdt_cat(species) # fdt_cat es la función de ftdh que calcula la tabla de frecuencia
+```
+
+## Tablas de frecuencia {visibility="uncounted" auto-animate="true"}
+
+-   A partir de una variable categórica
+
+```{r echo=T, eval=T}
+#| code-line-numbers: "4"
+library(fdth)                   # fdth es una librería que nos permite calcular tablas de frecuencia
+attach(penguins)                # attach es un comando que convierte las columnas en objetos
+tabla_frec1 <- fdt_cat(species) # fdt_cat es la función de ftdh que calcula la tabla de frecuencia
+tabla_frec1
+```
+
+. . .
+
+-   f: frecuencia absoluta
+
+-   rf: frecuencia relativa, rf(%): frecuencia relativa en %
+
+-   cf: frecuencia acumulada, cf(%): frecuencia acumulada en %
+
+## Tablas de frecuencia {visibility="uncounted" auto-animate="true"}
+
+::: incremental
+-   Categorizando una variable continua
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+#| code-line-numbers: "1"
+tabla_frec2 <- fdt(body_mass_g, na.rm = T)
+```
+
+## Tablas de frecuencia {visibility="uncounted" auto-animate="true"}
+
+-   Categorizando una variable continua
+
+```{r echo=T, eval=T, error=T}
+#| code-line-numbers: "2"
+tabla_frec2 <- fdt(body_mass_g, na.rm = T)
+tabla_frec2
+```
+
+::: incremental
+-   La librería `fdth` categoriza una variable continua en base a tres distintos algoritmos. El "default" es el algoritmo "Sturges" (ver `?fdth()` para más información).
+:::
+
+## ¿Cómo exporto mis tablas?
+
+. . .
+
+-   Existen varias opciones para exportar tablas a otros formatos (.pdf, .docx, .html)
+
+. . .
+
+```{r echo=T, eval=F, error=T}
+#| code-line-numbers: "1|2|3|4|5|6"
+library(flextable)
+ft1 <- flextable(tabla_frec1)
+ft2 <- flextable(tabla_frec2[[1]]) # tabla_frec2 es una lista
+save_as_docx("Tabla_1" = ft1, "Tabla_2" = ft2, 
+             path = "C:/Users/mmore/Documents/cursos_uce_2023/est-apl-uce-2023/datos/tablas.docx")
+detach(penguins) # IMPORTANTISIMO!
+```
+
+. . .
+
+![](images/tabla_word.png){fig-align="center"}
+
+## Ejercicio 1.2
+
+Crea una tabla de frecuencia categorizando la variable `bill_depth_mm` y exportala a un archivo de Word en tu directorio de trabajo
+
+# ¡Antes de terminar por hoy! {transition="slide"}
+
+## Gráficos listos para publicación
+
+![](images/ejemplot1.png){fig-align="center"}
+
+::: footer
+[Moreno-Zambrano, *et al.* (2022), R. S. O. Sci. **9**(2)](https://royalsocietypublishing.org/doi/full/10.1098/rsos.210274){target="_blank"}
+:::
+
+## Gráficos listos para publicación {visibility="uncounted"}
+
+![](images/map.png){fig-align="center"}
+
+::: footer
+Moreno-Zambrano, *et al.* (2018) *No publicado*
+:::
+
+## Gráficos listos para publicación {visibility="uncounted"}
+
+![](images/netw_p.jpg){fig-align="center"}
+
+::: footer
+[Gráfica propia, @psignificant](https://twitter.com/psignificant/status/1083538655648628737){target="_blank"}
+:::
+
+
+## Animaciones
+
+![](images/a_1.png){fig-align="center"}
+
+::: footer
+[Gráfica para, @BIOscience_N](https://twitter.com/BIOscience_N/status/1100381831663370240){target="_blank"}
+:::
+
+## Animaciones {visibility="uncounted"}
+
+![](images/a_2.png){fig-align="center"}
+
+::: footer
+[Gráfica creada por Michael Harper, tomado de *Animated Plots with R*](https://mikeyharper.uk/animated-plots-with-r/){target="_blank"}
+:::
+
+## Animaciones {visibility="uncounted"}
+
+![](images/ani_3.png){fig-align="center"}
+
+::: footer
+[Gráfica creada por David Smith, tomada de *Global Migration Animated with R*](https://blog.revolutionanalytics.com/2018/06/global-migration-animated-with-r.html){target="_blank"}
+:::
+
+## Páginas web
+
+![](images/w_p.png){fig-align="center"}
+
+::: footer
+[Página web personal](https://mmorenozam.netlify.app){target="_blank"}
+:::
+
+## Reportes
+
+![](images/w_p2.png){fig-align="center" height="580"}
+
+::: footer
+[Notebook para StanCon 2019 (Cambridge, UK)](https://mmorenozam.github.io/stan2019/){target="_blank"}
+:::
+
+## Apps interactivas (Shiny Apps)
+
+![](images/shini.png){fig-align="center"}
+
+::: footer
+[Shiny App del ICGC Data portal para visualizar el genoma de pacientes con cáncer pancreático](https://gallery.shinyapps.io/genome_browser/){target="_blank"}
+:::
+
+# ¡Gracias!

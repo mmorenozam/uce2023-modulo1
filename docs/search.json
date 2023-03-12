@@ -1,0 +1,415 @@
+[
+  {
+    "objectID": "index.html#acerca-de-mí",
+    "href": "index.html#acerca-de-mí",
+    "title": "Estadística aplicada con R",
+    "section": "Acerca de mí",
+    "text": "Acerca de mí\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIngeniero en Biotecnología, ESPE\nMáster en Estadística, Katholieke Universiteit Leuven\nDoctor en Bioinformática, Jacobs University Bremen\nHe trabajado cómo consultor freelance, maestro de Química, analista estadístico gubernamental, doctorante y postdoc\nTengo 10 años de experiencia en programación estadística, y actualmente soy científico bioestadístico en Bayer Crop Science en la división de Field Solutions Technologies"
+  },
+  {
+    "objectID": "index.html#acerca-del-curso",
+    "href": "index.html#acerca-del-curso",
+    "title": "Estadística aplicada con R",
+    "section": "Acerca del curso",
+    "text": "Acerca del curso\n\n\nObjetivos:\n\nDar una introducción práctica al lenguaje de programación estadística R\nCubrir metodologías básicas de análisis estadístico con su interpretación y visualización de resultados\nDesarrollar en el participante las destrezas necesarias para entender, interpretar y comunicar los resultados estadísticos de sus análisis\n\nLo que espero de mi audiencia\n\nEntusiasmo, creatividad y respeto"
+  },
+  {
+    "objectID": "index.html#acerca-del-curso-1",
+    "href": "index.html#acerca-del-curso-1",
+    "title": "Estadística aplicada con R",
+    "section": "Acerca del curso",
+    "text": "Acerca del curso\n\n\nPre-requisitos:\n\nConocimientos básicos de estadística\nConexión estable a internet\n\nMateriales:\n\nLas presentaciones y ciertas tablas de datos se encuentran en el sitio web del curso, otros datos utilizados serán presentados a lo largo del curso\n\nCanales de comunicación:\n\nPlataforma ZULIP\nEmail del instructor: mmorenozambrano@gmail.com"
+  },
+  {
+    "objectID": "index.html#acerca-del-curso-2",
+    "href": "index.html#acerca-del-curso-2",
+    "title": "Estadística aplicada con R",
+    "section": "Acerca del curso",
+    "text": "Acerca del curso\n\n\nEstructura de cada sesión:\n\n50% de presentaciones y demostraciones\n50% de ejercicios prácticos y aplicación de conocimiento adquirido\nUn receso de 10 minutos en la mitad de cada sesión\n\nTrabajo final del curso:\n\nRealización de un reporte estadístico\nLa aprobación del curso se conseguirá con una nota mínima de 7/10"
+  },
+  {
+    "objectID": "index.html#sobre-el-trabajo-final",
+    "href": "index.html#sobre-el-trabajo-final",
+    "title": "Estadística aplicada con R",
+    "section": "Sobre el trabajo final",
+    "text": "Sobre el trabajo final\n\n\nLa estructura básica que espero de un reporte estadístico es la mínima establecida por el método científico (título, resumen, objetivos, metodología, resultados, conclusiones y biobliografía).\nLo importante es brindar al participante el conocimiento necesario para redactar resultados estadísticos de una manera entendible para el público en general.\nNO ES NECESARIO seguir ninguna norma de citación biobliográfica (o sección de biobliografía de ser el caso).\nES IMPRESCINDIBLE el presentar el código de R (script) usado en el reporte a manera de Apéndice.\nEnvío del reporte final debe ser hasta antes de las 23H59 GMT-5 (hora de Ecuador continental) del 7 de abril del año en curso en formato pdf al correo electrónico del instructor (mmorenozambrano@gmail.com).\nLa nota del reporte será entregada de manera individual a cada participante hasta el 14 de abril del año en curso al correo del cual fue remitido el mismo.\nEl instructor entregará el reporte final de notas a la Coordinación de Educación Continua de la Facultad de Ciencias Biológicas de la UCE el 18 de abril."
+  },
+  {
+    "objectID": "index.html#recomendaciones",
+    "href": "index.html#recomendaciones",
+    "title": "Estadística aplicada con R",
+    "section": "Recomendaciones",
+    "text": "Recomendaciones\n\n\nComunícame si tu ordenador usa un sistema operativo distinto a Windows (MacOS o Linux)\nDe ser posible, sigue las sesiones en una tablet/otro monitor/otro ordenador (o practica el dominio de ALT+TAB)\nAliento el uso de datos propios (¡este es un curso mayoritariamente práctico!)\nNo existe pregunta más tonta que la que no se hace\nNo sentirse intimidado por recursos extras y complementarios mayoritariamente en idioma inglés"
+  },
+  {
+    "objectID": "index.html#recomendaciones-1",
+    "href": "index.html#recomendaciones-1",
+    "title": "Estadística aplicada con R",
+    "section": "Recomendaciones",
+    "text": "Recomendaciones\n\n\nDurante el curso se espera que sigas y reproduzcas en tu ordenador en tiempo real el código de R que escribiré para cada ejemplo. ¡NO DESESPERES si no alcanzas mi ritmo! Cada sesión es grabada y la subiré inmediatamente a un canal privado de YouTube para que puedas recurrir al mismo de ser necesario.\nNuevamente, por si tienes dudas e inquietudes, puedes comunicarte conmigo mediante los canales de comunicación anteriormente mencionados."
+  },
+  {
+    "objectID": "index.html#una-muy-breve-historia-de-r",
+    "href": "index.html#una-muy-breve-historia-de-r",
+    "title": "Estadística aplicada con R",
+    "section": "Una muy breve historia de R",
+    "text": "Una muy breve historia de R\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n1991: Robert Gentleman y Ross Ihaka (Universidad de Auckland, NZ) empiezan a desarrollar R\n1995: R se convierte en un proyecto open-source\n1997: Se establecen el Comprehensive R Archive Network (CRAN) y el R core group\n2000: Lanzamiento de R versión 1.0.0\n2003: Se establece la R Foundation\n2004: Se lleva a cabo la primera conferencia UseR! en Viena, Austria\n2006: Se edita el primer número del R Journal\n2011: Lanzamiento de RStudio versión beta\n2016: Lanzamiento de RStudio versión 1.0.0\n2017: CRAN alcanza más de 10000 librerías públicas"
+  },
+  {
+    "objectID": "index.html#por-qué-r",
+    "href": "index.html#por-qué-r",
+    "title": "Estadística aplicada con R",
+    "section": "¿Por qué R?",
+    "text": "¿Por qué R?\n\n\n\n\n\n \n\n\n\n\n\n\n\nUso de R comparado con SAS, SPSS y JMP en Ecología (Tomado de Touchon y McCoy (2016), Ecosphere 7 (8))\n\n\n\n\n\n\n\n\nSu uso se va extendiendo cada vez más en el ámbito académico (e industrial)\nSoftware libre\nAmplio abanico de librerías (19223 al 19.02.2023)\n¡Basta comunidad de R enthusiasts!\nVersátil:\n\nGráficos listos para publicación\nGeneración de reportes, páginas web, presentaciones y libros en distintos formatos (rmarkdown, blogdown, quarto)\nConstrucción de aplicaciones interactivas para visualización/análisis de datos (rshiny)"
+  },
+  {
+    "objectID": "index.html#instalación-de-r",
+    "href": "index.html#instalación-de-r",
+    "title": "Estadística aplicada con R",
+    "section": "Instalación de R",
+    "text": "Instalación de R\n\n\n\nIngresa a https://cran.r-project.org/bin/windows/base/\nDescarga la última versión disponible de R\nEjecuta el archivo .exe para iniciar la instalación\n\nRecomendado: No cambies el directorio sugerido por el asistente de instalación\nOpcional: No instalar traducciones de los mensajes de R"
+  },
+  {
+    "objectID": "index.html#instalación-de-rstudio",
+    "href": "index.html#instalación-de-rstudio",
+    "title": "Estadística aplicada con R",
+    "section": "Instalación de RStudio",
+    "text": "Instalación de RStudio\n\n\nIngresa a https://posit.co/download/rstudio-desktop/#download\nClick en la opción de instalar “RStudio Desktop for Windows”\nEjecuta el archivo .exe para iniciar la instalación\n\nNo cambies las sugerencias pre-establecidas para la instalación\nEn el caso de tener una versión de R anterior a la previamente instalada, es probable que la primera vez que abramos RStudio, este nos pregunte que version queremos usar (recomendado usar la última versión de R)"
+  },
+  {
+    "objectID": "index.html#instalación-de-rtools-opcional",
+    "href": "index.html#instalación-de-rtools-opcional",
+    "title": "Estadística aplicada con R",
+    "section": "Instalación de Rtools (opcional)",
+    "text": "Instalación de Rtools (opcional)\n\n\n\nRtools es una cadena de herramientas para compilar librerías de R en Windows basada en lenguajes C/C++/Fortran.\nNo es necesario en sistemas operativos de Apple o basados en Unix (Linux).\nSe puede usar R en Windows sin necesidad de Rtools por la existencia de versiones de librerías en formato binario (ya previamente compiladas).\nLas ventajas de contar con Rtools:\n\nPosibilidad de actualizar librerías a sus mas recientes versiones.\nCompilación de versiones beta de librerías experimentales aun no disponibles en CRAN.\nUso de librerías específicas que necesitan de Rtools para su funcionamiento (ej. rstan)\n\nEn caso de que desees instalar Rtools, sigue las instrucciones en este link https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html"
+  },
+  {
+    "objectID": "index.html#gui-rstudio",
+    "href": "index.html#gui-rstudio",
+    "title": "Estadística aplicada con R",
+    "section": "GUI RStudio",
+    "text": "GUI RStudio"
+  },
+  {
+    "objectID": "index.html#gui-rstudio-1",
+    "href": "index.html#gui-rstudio-1",
+    "title": "Estadística aplicada con R",
+    "section": "GUI RStudio",
+    "text": "GUI RStudio\n\nEditor: ventana donde escribimos código. Puede contener tantas subpestanas como scripts de R tengamos abiertos. No se ejecuta a no ser que ordenemos a R hacerlo.\nAmbiente/historia de trabajo: nos permite visualizar los objetos que vayamos creando durante la ejecución del código así como el orden de los comandos ejecutados.\nConsola: o terminal de R, es la interface directa de RStudio con R. En esta podemos ejecutar comandos línea por línea y visualizar los resultados de la ejecución de lo que escribamos en el editor.\nVarias subpestanas, de importancia:\n\nPlots: donde se producirán los plots que ejecutemos\nPackages: listado de librerías instaladas\nHelp: ayuda de R (activada por comando o busqueda manual)\nViewer: crea una ventana fuera del ambiente de RStudio para visualizar gráficos"
+  },
+  {
+    "objectID": "index.html#tipos-de-objetos-en-r",
+    "href": "index.html#tipos-de-objetos-en-r",
+    "title": "Estadística aplicada con R",
+    "section": "Tipos de objetos en R",
+    "text": "Tipos de objetos en R\n\n\nEn R, los objetos son distintas formas de almacenar datos/información\nExisten varios tipos de objetos en R, los mas básicos:\n\nVectores\nTablas de datos\nListas\nMatrices"
+  },
+  {
+    "objectID": "index.html#vectores",
+    "href": "index.html#vectores",
+    "title": "Estadística aplicada con R",
+    "section": "Vectores",
+    "text": "Vectores\n\nUn vector es un contenedor de elementos de la misma clase\n\n\nvector_a <- c(1, 2, 3)                               # números enteros/reales (num)\nvector_b <- c(\"uno\", \"dos\", \"tres\")                  # caracteres (chr)\nvector_c <- as.Date(c(\"2000-01-01\", \"2000-01-02\"))   # fechas (Date)\nvector_d <- as.factor(c(\"A\", \"B\", \"C\"))              # factores (Factor)\n\n\n\nSin embargo, operaciones como estas son válidas\n\n\nc(vector_a, vector_b)\n\n[1] \"1\"    \"2\"    \"3\"    \"uno\"  \"dos\"  \"tres\"\n\nc(vector_a, vector_c)\n\n[1]     1     2     3 10957 10958\n\nc(vector_b, vector_d)\n\n[1] \"uno\"  \"dos\"  \"tres\" \"1\"    \"2\"    \"3\""
+  },
+  {
+    "objectID": "index.html#vectores-1",
+    "href": "index.html#vectores-1",
+    "title": "Estadística aplicada con R",
+    "section": "Vectores",
+    "text": "Vectores\n\n\nCuando elementos de distinta clase son almacenados en un vector, R los transforma\n¿Cómo podemos saber la clase de un objeto de R?\n\n\n\n\nvector_e <- c(\"1\", \"2\", 3, 4)"
+  },
+  {
+    "objectID": "index.html#vectores-2",
+    "href": "index.html#vectores-2",
+    "title": "Estadística aplicada con R",
+    "section": "Vectores",
+    "text": "Vectores\n\nCuando elementos de distinta clase son almacenados en un vector, R los transforma\n¿Cómo podemos saber la clase de un objeto de R?\n\n\nvector_e <- c(\"1\", \"2\", 3, 4)\nstr(vector_e)\n\n chr [1:4] \"1\" \"2\" \"3\" \"4\"\n\n\n\n\nstr es un comando base de R. Es el comando mas simple para explorar la clase de un objeto.\nPero ya hablaremos de comandos y librerías en breve…"
+  },
+  {
+    "objectID": "index.html#tablas-de-datos",
+    "href": "index.html#tablas-de-datos",
+    "title": "Estadística aplicada con R",
+    "section": "Tablas de datos",
+    "text": "Tablas de datos\n\n\nArreglo bidimensional que permite almacenar datos de distintas clases\n¿Cómo creo tablas de datos en R?\n\n\n\n\ntabla <- data.frame(variable1 = c(1, 2, 3, 4, 5),\n                    variable2 = c(\"A\", \"B\", \"C\", \"D\", \"E\"))"
+  },
+  {
+    "objectID": "index.html#tablas-de-datos-1",
+    "href": "index.html#tablas-de-datos-1",
+    "title": "Estadística aplicada con R",
+    "section": "Tablas de datos",
+    "text": "Tablas de datos\n\nArreglo bidimensional que permite almacenar datos de distintas clases\n¿Cómo creo tablas de datos en R?\n\n\ntabla <- data.frame(variable1 = c(1, 2, 3, 4, 5),\n                    variable2 = c(\"A\", \"B\", \"C\", \"D\", \"E\"))\n\ntabla\n\n  variable1 variable2\n1         1         A\n2         2         B\n3         3         C\n4         4         D\n5         5         E\n\n\n\n\n¿Cómo importo tablas de datos en R? (mediante la librería de base, o librerías externas)"
+  },
+  {
+    "objectID": "index.html#listas",
+    "href": "index.html#listas",
+    "title": "Estadística aplicada con R",
+    "section": "Listas",
+    "text": "Listas\n\n\nArreglo multidimensional de elementos no necesariamente del mismo tipo ni misma longitud\n\n\n\n\nlista <- list(lista1 = vector_a,\n              lista2 = tabla)"
+  },
+  {
+    "objectID": "index.html#listas-1",
+    "href": "index.html#listas-1",
+    "title": "Estadística aplicada con R",
+    "section": "Listas",
+    "text": "Listas\n\nArreglo multidimensional de elementos no necesariamente del mismo tipo ni misma longitud.\n\n\nlista_a <- list(lista1 = vector_a,\n                lista2 = tabla)\nlista_a\n\n$lista1\n[1] 1 2 3\n\n$lista2\n  variable1 variable2\n1         1         A\n2         2         B\n3         3         C\n4         4         D\n5         5         E"
+  },
+  {
+    "objectID": "index.html#indexación",
+    "href": "index.html#indexación",
+    "title": "Estadística aplicada con R",
+    "section": "Indexación",
+    "text": "Indexación\n\n\nTodos los elementos de un objeto de R tienen un índice.\nEsto permite el acceder a elementos específicos de un objeto mediante su índice.\n¿Cuál es el segundo elemento del vector_a?\n\n\n\n\nvector_a[2]\n\n[1] 2\n\n\n\n\n\n¿Cuál es el valor en la columna 1, fila 3 de la tabla de datos tabla?\n\n\n\n\ntabla[3,1] # [fila, columna]\n\n[1] 3"
+  },
+  {
+    "objectID": "index.html#indexación-1",
+    "href": "index.html#indexación-1",
+    "title": "Estadística aplicada con R",
+    "section": "Indexación",
+    "text": "Indexación\n\n¿Cuál es el segundo elemento de la lista lista_a?\n\n\n\nlista_a[[2]]\n\n  variable1 variable2\n1         1         A\n2         2         B\n3         3         C\n4         4         D\n5         5         E\n\n\n\n\n\n¿Cuál es el valor en la columna 1, fila 3 de la tabla de datos que es el segundo elemento de la lista lista_a?\n\n\n\n\nlista_a[[2]][3,1]\n\n[1] 3"
+  },
+  {
+    "objectID": "index.html#librerías-de-r",
+    "href": "index.html#librerías-de-r",
+    "title": "Estadística aplicada con R",
+    "section": "Librerías de R",
+    "text": "Librerías de R\n\n\nUna librería es un conjunto de funciones que son invocadas mediante sus nombres exactos (comandos) y ejecutadas de acuerdo a los argumentos que requieran\n\nEn los ejemplos anteriores: as.Date, as.factor, str, y data.frame son comandos de la librería base de R\n\nExisten dos tipos de librerías en R\n\nLibrerías base de R (disponibles desde todo inicio de sesión)\nLibrerías externas de R (requieren ser instaladas una única vez y llamadas previamente al análisis)"
+  },
+  {
+    "objectID": "index.html#instalación-de-librerías-en-r",
+    "href": "index.html#instalación-de-librerías-en-r",
+    "title": "Estadística aplicada con R",
+    "section": "Instalación de librerías en R",
+    "text": "Instalación de librerías en R\n\n\nExisten dos formas de instalar librerías en R\n\nMediante GUI de RStudio\nMediante el editor o la consola, ventanas 1 y 3 de RStudio, respectivamente\n\nEn este curso nos enfocaremos en hacer mínimo uso de la GUI. El motivo: mientras menos dependemos de la GUI, nuestros códigos (scripts) serán mas reproducibles e independientes de nuestra intervención cada vez que sean ejecutados."
+  },
+  {
+    "objectID": "index.html#instalación-y-llamado-de-librerías-en-r",
+    "href": "index.html#instalación-y-llamado-de-librerías-en-r",
+    "title": "Estadística aplicada con R",
+    "section": "Instalación y llamado de librerías en R",
+    "text": "Instalación y llamado de librerías en R\n\n\nEl comando base de R para instalar librerías es install.packages\nPuede instalar una librería a la vez:\n\n\n\n\ninstall.packages(\"ggplot2\")\n\n\n\nO mas de una librería a la vez:\n\n\n\n\n\ninstall.packages(c(\"palmerpenguins\",\"fdth\", \"flextable\", \"readxl\", \"modeest\"))\n\n\n\n\nPara llamar (cargar) una librería en R se usa el comando base library()\n\n\n\n\nlibrary(ggplot2)"
+  },
+  {
+    "objectID": "index.html#importar-tablas-de-datos-a-r",
+    "href": "index.html#importar-tablas-de-datos-a-r",
+    "title": "Estadística aplicada con R",
+    "section": "Importar tablas de datos a R",
+    "text": "Importar tablas de datos a R\n\n\nLa librería base de R permite importar datos de archivos de texto (.txt) y archivos de valores separados por comas (.csv) mediante los comandos read.table() y read.csv() respectivamente.\nPero en la realidad, la mayoría de personas usamos actualmente Excel para llevar control de nuestros datos. En R, podemos importar datos de Excel mediante la librería readxl:\n\n\n\n\nlibrary(readxl)                           # invocamos la librería\nrot_berlin <- read_excel(file.choose())   # creamos un objeto (tabla de datos) y llamamos la función read_excel\n\n\n\n¡Esta opción no es óptima!"
+  },
+  {
+    "objectID": "index.html#importar-tablas-de-datos-a-r-1",
+    "href": "index.html#importar-tablas-de-datos-a-r-1",
+    "title": "Estadística aplicada con R",
+    "section": "Importar tablas de datos a R",
+    "text": "Importar tablas de datos a R\n\n\nIdealmente tus códigos (scripts) deben ser lo mas posiblemente reproducibles. Para comenzar, te doy las siguientes recomendaciones:\n\nCrea un folder para cada proyecto\nEn este folder copia los archivos de Excel relacionados\nCrea dentro de este folder un script de R, ejemplo “sesion1.R”\nEl primer paso en este script, es indicarle a R el directorio de trabajo (con el comando base setwd())\n¡Estamos entonces listos para cualquier análisis que deseemos hacer!"
+  },
+  {
+    "objectID": "index.html#importar-tablas-de-datos-a-r-2",
+    "href": "index.html#importar-tablas-de-datos-a-r-2",
+    "title": "Estadística aplicada con R",
+    "section": "Importar tablas de datos a R",
+    "text": "Importar tablas de datos a R\n\nsetwd(\"C:/Users/mmore/Documents/cursos_uce_2023/datos/\") # directorio de trabajo\nlibrary(readxl)                           # invocamos la librería\nrot_berlin <- read_excel(\"rotXLS.xlsx\")   # creamos un objeto (tabla de datos) y llamamos la función read_excel"
+  },
+  {
+    "objectID": "index.html#importar-tablas-de-datos-a-r-3",
+    "href": "index.html#importar-tablas-de-datos-a-r-3",
+    "title": "Estadística aplicada con R",
+    "section": "Importar tablas de datos a R",
+    "text": "Importar tablas de datos a R\n\nsetwd(\"C:/Users/mmore/Documents/cursos_uce_2023/datos/\") \nlibrary(readxl)                           # invocamos la librería\nrot_berlin <- read_excel(\"rotXLS.xlsx\")   # creamos un objeto (tabla de datos) y llamamos la función read_excel\nhead(rot_berlin)                          # chequeamos que nuestro archivo se halla importado correctamente\n\n# A tibble: 6 × 11\n  date                incidence  week    FM    RSK SHK_TAG PM         TMK    TXK\n  <dttm>                  <dbl> <dbl> <dbl>  <dbl>   <dbl> <chr>    <dbl>  <dbl>\n1 2001-01-07 00:00:00      0       14  3.35 0          0   1003.0…  3.86   7.05 \n2 2001-01-14 00:00:00      0.23    15  1.65 0          0   1028.6… -2.35  -1.45 \n3 2001-01-21 00:00:00      0.34    16  3.15 0.0545     0.2 1018.1… -0.364  0.445\n4 2001-01-28 00:00:00      1.69    17  5.98 3.75       0   991.72…  2.47   3.16 \n5 2001-02-04 00:00:00      1.57    18  5.88 6.39       3.3 999.45… -4.92  -3.47 \n6 2001-02-11 00:00:00      2.17    19  4.68 0.218      0   1023.8…  6.29   9.05 \n# … with 2 more variables: TNK <dbl>, UPM <dbl>"
+  },
+  {
+    "objectID": "index.html#a-tener-en-cuenta-antes-de-continuar",
+    "href": "index.html#a-tener-en-cuenta-antes-de-continuar",
+    "title": "Estadística aplicada con R",
+    "section": "¡A tener en cuenta antes de continuar!",
+    "text": "¡A tener en cuenta antes de continuar!\n\n\nAntes de sumergirnos en el uso de R, es importante definir algunas cosas:\n\nPara asignar contenido (valores) a un objeto, los operadores de R son <- o =\nR es sensible a mayúsculas y minúsculas (Tabla ≠ tabla)\nR no es sensible a indentaciones (como Python)\n\n\n\n\n\nfor (i in 1:20){\n  x = 0 + i\n  print(x)\n}\n\n\n\n\nfor (i in 1:20){\nx = 0 + i\nprint(x)\n}"
+  },
+  {
+    "objectID": "index.html#a-tener-en-cuenta-antes-de-continuar-1",
+    "href": "index.html#a-tener-en-cuenta-antes-de-continuar-1",
+    "title": "Estadística aplicada con R",
+    "section": "¡A tener en cuenta antes de continuar!",
+    "text": "¡A tener en cuenta antes de continuar!\n\n\nUna buena práctica de programación es comentar qué hace tu código con el símbolo #\n\n\n\n\nfor (i in 1:20){ # este loop imprime números del 1 al 20 \n  x = 0 + i\n  print(x)\n}\n\n\n\nPodemos también comentar líneas de código. Al comentarlas, estas no se ejecutarán (un atajo es seleccionar las líneas de código a comentar, y presionar al mismo tiempo “Ctrl + shift + c”)\n\n\n\n\n\n# Este loop quizá me sirva después, lo comento\n# for (i in 1:20){ # este loop imprime números del 1 al 20\n#   x = 0 + i\n#   print(x)\n# }"
+  },
+  {
+    "objectID": "index.html#a-tener-en-cuenta-antes-de-continuar-2",
+    "href": "index.html#a-tener-en-cuenta-antes-de-continuar-2",
+    "title": "Estadística aplicada con R",
+    "section": "¡A tener en cuenta antes de continuar!",
+    "text": "¡A tener en cuenta antes de continuar!\n\n\nEs impráctico y quizá imposible memorizar los argumentos de las cientos de funciones de R. Para ello contamos con la ayuda de R que tiene la siguiente sintaxis ?nombre_de_la_función:\n\n\n\n\n?print()"
+  },
+  {
+    "objectID": "index.html#a-tener-en-cuenta-antes-de-continuar-3",
+    "href": "index.html#a-tener-en-cuenta-antes-de-continuar-3",
+    "title": "Estadística aplicada con R",
+    "section": "¡A tener en cuenta antes de continuar!",
+    "text": "¡A tener en cuenta antes de continuar!\n\n\nR NO reconoce nombres de objetos que comiencen con un número, o nombres que contengan espacios vacíos\n\n\n\n\n1x <- 1\n\nError: <text>:1:2: unexpected symbol\n1: 1x\n     ^\n\n\n\n\n\nx y <- 1\n\nError: <text>:1:3: unexpected symbol\n1: x y\n      ^\n\n\n\nCuando R importa tablas de datos, si encuentra nombres de columnas con números como el primer caracter, o con espacios vacíos dentro del mismo, reformatea automáticamente dichos valores."
+  },
+  {
+    "objectID": "index.html#a-tener-en-cuenta-antes-de-continuar-4",
+    "href": "index.html#a-tener-en-cuenta-antes-de-continuar-4",
+    "title": "Estadística aplicada con R",
+    "section": "¡A tener en cuenta antes de continuar!",
+    "text": "¡A tener en cuenta antes de continuar!\n\n\nExisten varias formas de correr tu código en R\n\nCon el ícono “Run” en la esquina superior derecha de la Ventana del editor.\nDesde una ventana del prompt de Windows (usuarios intermedios y avanzados).\nY mi preferida: el atajo “Ctrl + Enter”. Esta última tiene la ventaja de correr línea por línea el código y también de correr únicamente sobre líneas previamente seleccionadas."
+  },
+  {
+    "objectID": "index.html#operaciones-estadísticas-básicas",
+    "href": "index.html#operaciones-estadísticas-básicas",
+    "title": "Estadística aplicada con R",
+    "section": "Operaciones estadísticas básicas",
+    "text": "Operaciones estadísticas básicas\n\n\nMedia aritmética\n\n\n\n\nx <- c(6.5, 5.5, 8.9, 10.5, 8.7, 6.9, 5.9, 6.5, 4.7, 5.6, 4.8, 8.9, 9.9, 10.7, 5.3)\nmean(x)\n\n[1] 7.286667\n\n\n\n\nMediana\n\n\n\n\n\nmedian(x)\n\n[1] 6.5\n\n\n\n\nModa (R no tiene una función base para la moda, una solución es la librería moodest)\n\n\n\n\n\nlibrary(modeest)\nmlv(x, method = \"mfv\")\n\n[1] 6.5 8.9"
+  },
+  {
+    "objectID": "index.html#operaciones-estadísticas-básicas-1",
+    "href": "index.html#operaciones-estadísticas-básicas-1",
+    "title": "Estadística aplicada con R",
+    "section": "Operaciones estadísticas básicas",
+    "text": "Operaciones estadísticas básicas\n\n\nDesviación estándar\n\n\n\n\nsd(x)\n\n[1] 2.107425\n\n\n\n\nVarianza\n\n\n\n\n\nvar(x)\n\n[1] 4.441238\n\n(sd(x))^2\n\n[1] 4.441238\n\n\n\n\nCuartiles\n\n\n\n\n\nquantile(x)\n\n   0%   25%   50%   75%  100% \n 4.70  5.55  6.50  8.90 10.70"
+  },
+  {
+    "objectID": "index.html#ejercicio-1.1",
+    "href": "index.html#ejercicio-1.1",
+    "title": "Estadística aplicada con R",
+    "section": "Ejercicio 1.1",
+    "text": "Ejercicio 1.1\nEl siguiente vector contiene dos valores perdidos NA. Las mayoría de funciones en R no lidian con datos perdidos a menos que les sea explícitamente indicado. Por medio de la ayuda de R (por ejemplo, ingresa ?mean() en la consola) encuentra la manera de indicarle a R que ignore los NA y realice los cálculos de la media aritmética, la mediana, la moda, la desviación estándar, la varianza y los cuartiles usando las funciones anteriormente enunciadas.\n\nej11 <- c(108.5, 75.3, 67.5, 93.6, 153.8, 113.9, NA, 133.8, 47.8, 71.1, NA)\n\nTip: basta con que veas la ayuda de una sola función para revisar el argumento que tienes que modificar. El mismo argumento es común a todas las demas funciones"
+  },
+  {
+    "objectID": "index.html#estadísticos-descriptivos-y-tablas-de-frecuencia",
+    "href": "index.html#estadísticos-descriptivos-y-tablas-de-frecuencia",
+    "title": "Estadística aplicada con R",
+    "section": "Estadísticos descriptivos y tablas de frecuencia",
+    "text": "Estadísticos descriptivos y tablas de frecuencia\n\n\nPara ilustrar esta sección, utilizaremos la base de datos de “Palmer penguins”:\n\nLos datos de Palmer Penguins fueron recolectados y puestos a disposición del público en general por la Dr. Kristen Gorman (estación Palmer, Antártida) y se encuentran disponibles en la librería palmerpenguins."
+  },
+  {
+    "objectID": "index.html#estadísticos-descriptivos",
+    "href": "index.html#estadísticos-descriptivos",
+    "title": "Estadística aplicada con R",
+    "section": "Estadísticos descriptivos",
+    "text": "Estadísticos descriptivos\n\nLa forma mas sencilla de calcular los estadísticos descriptivos de una tabla de datos es usando la función base summary()\n\n\n\nlibrary(palmerpenguins)\nsummary(penguins)\n\n      species          island    bill_length_mm  bill_depth_mm  \n Adelie   :152   Biscoe   :168   Min.   :32.10   Min.   :13.10  \n Chinstrap: 68   Dream    :124   1st Qu.:39.23   1st Qu.:15.60  \n Gentoo   :124   Torgersen: 52   Median :44.45   Median :17.30  \n                                 Mean   :43.92   Mean   :17.15  \n                                 3rd Qu.:48.50   3rd Qu.:18.70  \n                                 Max.   :59.60   Max.   :21.50  \n                                 NA's   :2       NA's   :2      \n flipper_length_mm  body_mass_g       sex           year     \n Min.   :172.0     Min.   :2700   female:165   Min.   :2007  \n 1st Qu.:190.0     1st Qu.:3550   male  :168   1st Qu.:2007  \n Median :197.0     Median :4050   NA's  : 11   Median :2008  \n Mean   :200.9     Mean   :4202                Mean   :2008  \n 3rd Qu.:213.0     3rd Qu.:4750                3rd Qu.:2009  \n Max.   :231.0     Max.   :6300                Max.   :2009  \n NA's   :2         NA's   :2"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia",
+    "href": "index.html#tablas-de-frecuencia",
+    "title": "Estadística aplicada con R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\n\nExisten dos formas de crear tablas de frecuencia:\n\nA partir de variables categóricas\nCategorizando una variable continua\n\nUsualmente se presentan:\n\nFrecuencia absoluta: número de observaciones por categoría\nFrecuencia acumulada: suma de frecuencias absolutas\nFrecuencia relativa: frecuencia absoluta/total de observaciones\nFrecuencia relativa acumulada: suma de frecuencias relativas"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia-1",
+    "href": "index.html#tablas-de-frecuencia-1",
+    "title": "Estadística aplicada con R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\n\nA partir de una variable categórica\n\n\n\n\nlibrary(fdth)                     # ftdh es una librería que nos permite calcular tablas de frecuencia\nattach(penguins)                  # attach es un comando que convierte las columnas en objetos"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia-2",
+    "href": "index.html#tablas-de-frecuencia-2",
+    "title": "Estadística aplicada con R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\nA partir de una variable categórica\n\n\nlibrary(fdth)                   # fdth es una librería que nos permite calcular tablas de frecuencia\nattach(penguins)                # attach es un comando que convierte las columnas en objetos\nhead(penguins)                  # le damos un vistazo a las variables (columnas)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_l…¹ body_…² sex    year\n  <fct>   <fct>              <dbl>         <dbl>       <int>   <int> <fct> <int>\n1 Adelie  Torgersen           39.1          18.7         181    3750 male   2007\n2 Adelie  Torgersen           39.5          17.4         186    3800 fema…  2007\n3 Adelie  Torgersen           40.3          18           195    3250 fema…  2007\n4 Adelie  Torgersen           NA            NA            NA      NA <NA>   2007\n5 Adelie  Torgersen           36.7          19.3         193    3450 fema…  2007\n6 Adelie  Torgersen           39.3          20.6         190    3650 male   2007\n# … with abbreviated variable names ¹​flipper_length_mm, ²​body_mass_g"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia-3",
+    "href": "index.html#tablas-de-frecuencia-3",
+    "title": "Estadística aplicada con R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\nA partir de una variable categórica\n\n\nlibrary(fdth)                   # fdth es una librería que nos permite calcular tablas de frecuencia\nattach(penguins)                # attach es un comando que convierte las columnas en objetos\ntabla_frec1 <- fdt_cat(species) # fdt_cat es la función de ftdh que calcula la tabla de frecuencia"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia-4",
+    "href": "index.html#tablas-de-frecuencia-4",
+    "title": "Estadística aplicada con R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\nA partir de una variable categórica\n\n\nlibrary(fdth)                   # fdth es una librería que nos permite calcular tablas de frecuencia\nattach(penguins)                # attach es un comando que convierte las columnas en objetos\ntabla_frec1 <- fdt_cat(species) # fdt_cat es la función de ftdh que calcula la tabla de frecuencia\ntabla_frec1\n\n  Category   f   rf rf(%)  cf  cf(%)\n    Adelie 152 0.44 44.19 152  44.19\n    Gentoo 124 0.36 36.05 276  80.23\n Chinstrap  68 0.20 19.77 344 100.00\n\n\n\n\nf: frecuencia absoluta\nrf: frecuencia relativa, rf(%): frecuencia relativa en %\ncf: frecuencia acumulada, cf(%): frecuencia acumulada en %"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia-5",
+    "href": "index.html#tablas-de-frecuencia-5",
+    "title": "Estadística aplicada con R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\n\nCategorizando una variable continua\n\n\n\n\ntabla_frec2 <- fdt(body_mass_g, na.rm = T)"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia-6",
+    "href": "index.html#tablas-de-frecuencia-6",
+    "title": "Estadística aplicada con R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\nCategorizando una variable continua\n\n\ntabla_frec2 <- fdt(body_mass_g, na.rm = T)\ntabla_frec2\n\n Class limits  f   rf rf(%)  cf cf(%)\n  [2673,3042) 11 0.03  3.20  11  3.20\n  [3042,3411) 47 0.14 13.66  58 16.86\n  [3411,3780) 71 0.21 20.64 129 37.50\n  [3780,4149) 53 0.15 15.41 182 52.91\n  [4149,4518) 45 0.13 13.08 227 65.99\n  [4518,4887) 41 0.12 11.92 268 77.91\n  [4887,5256) 28 0.08  8.14 296 86.05\n  [5256,5625) 26 0.08  7.56 322 93.60\n  [5625,5994) 16 0.05  4.65 338 98.26\n  [5994,6363)  4 0.01  1.16 342 99.42\n\n\n\n\nLa librería fdth categoriza una variable continua en base a tres distintos algoritmos. El “default” es el algoritmo “Sturges” (ver ?fdth() para más información)."
+  },
+  {
+    "objectID": "index.html#cómo-exporto-mis-tablas",
+    "href": "index.html#cómo-exporto-mis-tablas",
+    "title": "Estadística aplicada con R",
+    "section": "¿Cómo exporto mis tablas?",
+    "text": "¿Cómo exporto mis tablas?\n\n\nExisten varias opciones para exportar tablas a otros formatos (.pdf, .docx, .html)\n\n\n\n\nlibrary(flextable)\nft1 <- flextable(tabla_frec1)\nft2 <- flextable(tabla_frec2[[1]]) # tabla_frec2 es una lista\nsave_as_docx(\"Tabla_1\" = ft1, \"Tabla_2\" = ft2, \n             path = \"C:/Users/mmore/Documents/cursos_uce_2023/est-apl-uce-2023/datos/tablas.docx\")\ndetach(penguins) # IMPORTANTISIMO!"
+  },
+  {
+    "objectID": "index.html#ejercicio-1.2",
+    "href": "index.html#ejercicio-1.2",
+    "title": "Estadística aplicada con R",
+    "section": "Ejercicio 1.2",
+    "text": "Ejercicio 1.2\nCrea una tabla de frecuencia categorizando la variable bill_depth_mm y exportala a un archivo de Word en tu directorio de trabajo"
+  },
+  {
+    "objectID": "index.html#gráficos-listos-para-publicación",
+    "href": "index.html#gráficos-listos-para-publicación",
+    "title": "Estadística aplicada con R",
+    "section": "Gráficos listos para publicación",
+    "text": "Gráficos listos para publicación\n\n\nMoreno-Zambrano, et al. (2022), R. S. O. Sci. 9(2)"
+  },
+  {
+    "objectID": "index.html#gráficos-listos-para-publicación-1",
+    "href": "index.html#gráficos-listos-para-publicación-1",
+    "title": "Estadística aplicada con R",
+    "section": "Gráficos listos para publicación",
+    "text": "Gráficos listos para publicación\n\n\nMoreno-Zambrano, et al. (2018) No publicado"
+  },
+  {
+    "objectID": "index.html#gráficos-listos-para-publicación-2",
+    "href": "index.html#gráficos-listos-para-publicación-2",
+    "title": "Estadística aplicada con R",
+    "section": "Gráficos listos para publicación",
+    "text": "Gráficos listos para publicación\n\n\nGráfica propia, @psignificant"
+  },
+  {
+    "objectID": "index.html#animaciones",
+    "href": "index.html#animaciones",
+    "title": "Estadística aplicada con R",
+    "section": "Animaciones",
+    "text": "Animaciones\n\n\nGráfica para, @BIOscience_N"
+  },
+  {
+    "objectID": "index.html#animaciones-1",
+    "href": "index.html#animaciones-1",
+    "title": "Estadística aplicada con R",
+    "section": "Animaciones",
+    "text": "Animaciones\n\n\nGráfica creada por Michael Harper, tomado de Animated Plots with R"
+  },
+  {
+    "objectID": "index.html#animaciones-2",
+    "href": "index.html#animaciones-2",
+    "title": "Estadística aplicada con R",
+    "section": "Animaciones",
+    "text": "Animaciones\n\n\nGráfica creada por David Smith, tomada de Global Migration Animated with R"
+  },
+  {
+    "objectID": "index.html#páginas-web",
+    "href": "index.html#páginas-web",
+    "title": "Estadística aplicada con R",
+    "section": "Páginas web",
+    "text": "Páginas web\n\n\nPágina web personal"
+  },
+  {
+    "objectID": "index.html#reportes",
+    "href": "index.html#reportes",
+    "title": "Estadística aplicada con R",
+    "section": "Reportes",
+    "text": "Reportes\n\n\n\n\n\n\nNotebook para StanCon 2019 (Cambridge, UK)"
+  },
+  {
+    "objectID": "index.html#apps-interactivas-shiny-apps",
+    "href": "index.html#apps-interactivas-shiny-apps",
+    "title": "Estadística aplicada con R",
+    "section": "Apps interactivas (Shiny Apps)",
+    "text": "Apps interactivas (Shiny Apps)\n\n\nShiny App del ICGC Data portal para visualizar el genoma de pacientes con cáncer pancreático"
+  }
+]
