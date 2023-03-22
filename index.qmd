@@ -25,7 +25,7 @@ format:
 editor: visual
 ---
 
-# ¡Conozcámonos! {transition="slide"}
+# ¡Conozcámonos!
 
 ## Acerca de mí 
 
@@ -72,7 +72,7 @@ editor: visual
 
 -   **Materiales:**
 
-    -   Las presentaciones y ciertas tablas de datos se encuentran en el [sitio web del curso](https://mmorenozam.github.io/est-apl-uce-2023-website/){target="_blank"}, otros datos utilizados serán presentados a lo largo del curso
+    -   Las presentaciones y ciertas tablas de datos se encuentran en el [sitio web del curso](https://mmorenozam.github.io/est-apl-uce-2023-website/){target="_blank"}, otros datos utilizados serán presentados a lo largo de cada clase.
 
 -   **Canales de comunicación:**
 
@@ -90,7 +90,7 @@ editor: visual
 
     -   50% de ejercicios prácticos y aplicación de conocimiento adquirido
 
-    -   Un receso de 10 minutos en la mitad de cada sesión
+    -   Un receso de 10 a 15 minutos en la mitad de cada sesión
 
 -   **Trabajo final del curso:**
 
@@ -102,26 +102,22 @@ editor: visual
 ## Sobre el trabajo final {.smaller}
 
 ::: incremental
--   La estructura básica que espero de un reporte estadístico es la mínima establecida por el método científico (título, resumen, objetivos, metodología, resultados, conclusiones y biobliografía).
+-   La estructura básica que espero de un reporte estadístico es : título, resumen, objetivos, metodología, resultados, conclusiones (bibliografía dependiendo si tiene sentido ponerla).
 
--   Lo importante es brindar al participante el conocimiento necesario para redactar resultados estadísticos de una manera entendible para el público en general.
+-   En caso de presentar bibliografía, el estilo que más te agrade está bien.
 
--   **NO ES NECESARIO** seguir ninguna norma de citación biobliográfica (o sección de biobliografía de ser el caso).
+-   El contenido del reporte debe estar escrito en una manera simple y entendible para el lector en general. No hace falta entrar a profundidad en conceptos estadísticos.
 
 -   **ES IMPRESCINDIBLE** el presentar el código de R (script) usado en el reporte a manera de Apéndice.
 
--   Envío del reporte final debe ser hasta antes de las 23H59 GMT-5 (hora de Ecuador continental) del 7 de abril del año en curso en formato pdf al correo electrónico del instructor (mmorenozambrano\@gmail.com).
+-   Envío del reporte final debe ser hasta antes de las 23H59 GMT-5 (hora de Ecuador continental) del 19 de abril del año en curso en formato pdf a mi correo electrónico (mmorenozambrano\@gmail.com).
 
--   La nota del reporte será entregada de manera individual a cada participante hasta el 14 de abril del año en curso al correo del cual fue remitido el mismo.
-
--   El instructor entregará el reporte final de notas a la Coordinación de Educación Continua de la Facultad de Ciencias Biológicas de la UCE el 18 de abril.
+-   La fecha de entrega de calificaciones del reporte la daré a conocer dependiendo del número de trabajos entregados.
 :::
 
 ## Recomendaciones 
 
 ::: incremental
--   Comunícame si tu ordenador usa un sistema operativo distinto a Windows (MacOS o Linux)
-
 -   De ser posible, sigue las sesiones en una tablet/otro monitor/otro ordenador (o practica el dominio de ALT+TAB)
 
 -   Aliento el uso de datos propios (¡este es un curso mayoritariamente práctico!)
@@ -134,12 +130,12 @@ editor: visual
 ## Recomendaciones {visibility="uncounted"}
 
 ::: incremental
--   Durante el curso se espera que sigas y reproduzcas en tu ordenador en tiempo real el código de R que escribiré para cada ejemplo. ¡**NO DESESPERES** si no alcanzas mi ritmo! Cada sesión es grabada y la subiré inmediatamente a un canal privado de YouTube para que puedas recurrir al mismo de ser necesario.
+-   Durante el curso se espera que sigas y reproduzcas en tu ordenador en tiempo real el código de R que escribiré para cada ejemplo. ¡**NO DESESPERES** si no alcanzas mi ritmo! Los ejercicios que veremos en cada clase, los subiré resueltos a la página web del curso un día después del término de cada sesión
 
 -   Nuevamente, por si tienes dudas e inquietudes, puedes comunicarte conmigo mediante los canales de comunicación anteriormente mencionados.
 :::
 
-# Introducción a R {transition="slide"}
+# Introducción a R
 
 ## Una muy breve historia de R {.smaller}
 
@@ -254,19 +250,19 @@ editor: visual
 
 ## GUI RStudio {.smaller visibility="uncounted"}
 
-1.  Editor: ventana donde escribimos código. Puede contener tantas subpestanas como scripts de R tengamos abiertos. No se ejecuta a no ser que ordenemos a R hacerlo.
+1.  Editor: ventana donde escribimos código. Puede contener tantas pestañas como scripts de R tengamos abiertos. No se ejecuta a no ser que ordenemos a R hacerlo.
 
 2.  Ambiente/historia de trabajo: nos permite visualizar los objetos que vayamos creando durante la ejecución del código así como el orden de los comandos ejecutados.
 
 3.  Consola: o terminal de R, es la interface directa de RStudio con R. En esta podemos ejecutar comandos línea por línea y visualizar los resultados de la ejecución de lo que escribamos en el editor.
 
-4.  Varias subpestanas, de importancia:
+4.  Varias pestañas de importancia:
 
     -   Plots: donde se producirán los plots que ejecutemos
 
     -   Packages: listado de librerías instaladas
 
-    -   Help: ayuda de R (activada por comando o busqueda manual)
+    -   Help: ayuda de R (activada por comando o búsqueda manual)
 
     -   Viewer: crea una ventana fuera del ambiente de RStudio para visualizar gráficos
 
@@ -483,7 +479,7 @@ install.packages("ggplot2")
 ```
 
 ::: incremental
--   O mas de una librería a la vez:
+-   O más de una librería a la vez:
 :::
 
 . . .
@@ -594,6 +590,13 @@ print(x)
 :::
 
 . . .
+
+![](images/when.jpg){fig-align="center" width=400}
+
+
+## ¡A tener en cuenta antes de continuar! {visibility="uncounted"}
+
+-   Una buena práctica de programación es comentar qué hace tu código con el símbolo `#`
 
 ```{r echo=T, eval=F, error=T}
 for (i in 1:20){ # este loop imprime números del 1 al 20 
@@ -735,7 +738,7 @@ quantile(x)
 
 ## Ejercicio 1.1
 
-El siguiente vector contiene dos valores perdidos `NA`. Las mayoría de funciones en R no lidian con datos perdidos a menos que les sea explícitamente indicado. Por medio de la ayuda de R (por ejemplo, ingresa `?mean()` en la consola) encuentra la manera de indicarle a R que ignore los `NA` y realice los cálculos de la media aritmética, la mediana, la moda, la desviación estándar, la varianza y los cuartiles usando las funciones anteriormente enunciadas. 
+El siguiente vector contiene dos valores perdidos `NA`. La mayoría de funciones en R no lidian con datos perdidos a menos que les sea explícitamente indicado. Por medio de la ayuda de R (por ejemplo, ingresa `?mean()` en la consola) encuentra la manera de indicarle a R que ignore los `NA` y realice los cálculos de la media aritmética, la mediana, la moda, la desviación estándar, la varianza y los cuartiles usando las funciones anteriormente enunciadas. 
 
 ```{r echo=T, eval=F, error=T}
 
@@ -743,7 +746,7 @@ ej11 <- c(108.5, 75.3, 67.5, 93.6, 153.8, 113.9, NA, 133.8, 47.8, 71.1, NA)
 
 ```
 
-**Tip: basta con que veas la ayuda de una sola función para revisar el argumento que tienes que modificar. El mismo argumento es común a todas las demas funciones**
+**Tip: basta con que veas la ayuda de una sola función para revisar el argumento que tienes que modificar. El mismo argumento es común a todas las demás funciones**
 
 ## Estadísticos descriptivos y tablas de frecuencia
 
@@ -908,7 +911,7 @@ detach(penguins) # IMPORTANTISIMO!
 
 Crea una tabla de frecuencia categorizando la variable `bill_depth_mm` y exportala a un archivo de Word en tu directorio de trabajo
 
-# ¡Antes de terminar por hoy! {transition="slide"}
+# ¡Antes de terminar por hoy!
 
 ## Gráficos listos para publicación
 
