@@ -92,7 +92,9 @@ editor: visual
 
 -   **Trabajo final del curso:**
 
-    -   Realización de un reporte estadístico
+    -   Opción 1: Realización de un reporte estadístico con tus propios datos.
+    
+    -   Opción 2: Cumplir con la sugerencia de análisis a realizar sobre distintas tablas de datos en el sitio web del curso.
 
     -   La aprobación del curso se conseguirá con una nota mínima de 7/10
 :::
@@ -100,13 +102,19 @@ editor: visual
 ## Sobre el trabajo final {.smaller}
 
 ::: incremental
--   La estructura básica que espero de un reporte estadístico es : título, resumen, objetivos, metodología, resultados, conclusiones (bibliografía dependiendo si tiene sentido ponerla).
+-   Opción 1:
 
--   En caso de presentar bibliografía, el estilo que más te agrade está bien.
+    -   La estructura básica que espero de un reporte estadístico es : título, resumen, objetivos, metodología, resultados, conclusiones (bibliografía dependiendo si tiene sentido ponerla).
 
--   El contenido del reporte debe estar escrito en una manera simple y entendible para el lector en general. No hace falta entrar a profundidad en conceptos estadísticos.
+    -   En caso de presentar bibliografía, el estilo que más te agrade está bien.
 
--   **ES IMPRESCINDIBLE** el presentar el código de R (script) usado en el reporte a manera de Apéndice.
+    -   El contenido del reporte debe estar escrito en una manera simple y entendible para el lector en general. No hace falta entrar a profundidad en conceptos estadísticos.
+
+-   Opción 2:
+
+    -   Resolver las preguntas establecidas como sugerencia en el sitio web del curso en base a tablas de datos disponibles en librerías de R y compartidas con el resto de tablas de datos externas.
+
+-   **ES IMPRESCINDIBLE** el presentar el código de R (script) usado en el reporte a manera de Apéndice, independientemente de la opción que optes para tu trabajo final.
 
 -   Envío del reporte final debe ser hasta antes de las 23H59 GMT-5 (hora de Ecuador continental) del 19 de abril del año en curso en formato pdf a mi correo electrónico (mmorenozambrano\@gmail.com).
 

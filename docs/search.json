@@ -25,14 +25,14 @@
     "href": "index.html#acerca-del-curso-2",
     "title": "Estadística aplicada con R",
     "section": "Acerca del curso",
-    "text": "Acerca del curso\n\n\nEstructura de cada sesión:\n\n50% de presentaciones y demostraciones\n50% de ejercicios prácticos y aplicación de conocimiento adquirido\nUn receso de 10 a 15 minutos en la mitad de cada sesión\n\nTrabajo final del curso:\n\nRealización de un reporte estadístico\nLa aprobación del curso se conseguirá con una nota mínima de 7/10"
+    "text": "Acerca del curso\n\n\nEstructura de cada sesión:\n\n50% de presentaciones y demostraciones\n50% de ejercicios prácticos y aplicación de conocimiento adquirido\nUn receso de 10 a 15 minutos en la mitad de cada sesión\n\nTrabajo final del curso:\n\nOpción 1: Realización de un reporte estadístico con tus propios datos.\nOpción 2: Cumplir con la sugerencia de análisis a realizar sobre distintas tablas de datos en el sitio web del curso.\nLa aprobación del curso se conseguirá con una nota mínima de 7/10"
   },
   {
     "objectID": "index.html#sobre-el-trabajo-final",
     "href": "index.html#sobre-el-trabajo-final",
     "title": "Estadística aplicada con R",
     "section": "Sobre el trabajo final",
-    "text": "Sobre el trabajo final\n\n\nLa estructura básica que espero de un reporte estadístico es : título, resumen, objetivos, metodología, resultados, conclusiones (bibliografía dependiendo si tiene sentido ponerla).\nEn caso de presentar bibliografía, el estilo que más te agrade está bien.\nEl contenido del reporte debe estar escrito en una manera simple y entendible para el lector en general. No hace falta entrar a profundidad en conceptos estadísticos.\nES IMPRESCINDIBLE el presentar el código de R (script) usado en el reporte a manera de Apéndice.\nEnvío del reporte final debe ser hasta antes de las 23H59 GMT-5 (hora de Ecuador continental) del 19 de abril del año en curso en formato pdf a mi correo electrónico (mmorenozambrano@gmail.com).\nLa fecha de entrega de calificaciones del reporte la daré a conocer dependiendo del número de trabajos entregados."
+    "text": "Sobre el trabajo final\n\n\nOpción 1:\n\nLa estructura básica que espero de un reporte estadístico es : título, resumen, objetivos, metodología, resultados, conclusiones (bibliografía dependiendo si tiene sentido ponerla).\nEn caso de presentar bibliografía, el estilo que más te agrade está bien.\nEl contenido del reporte debe estar escrito en una manera simple y entendible para el lector en general. No hace falta entrar a profundidad en conceptos estadísticos.\n\nOpción 2:\n\nResolver las preguntas establecidas como sugerencia en el sitio web del curso en base a tablas de datos disponibles en librerías de R y compartidas con el resto de tablas de datos externas.\n\nES IMPRESCINDIBLE el presentar el código de R (script) usado en el reporte a manera de Apéndice, independientemente de la opción que optes para tu trabajo final.\nEnvío del reporte final debe ser hasta antes de las 23H59 GMT-5 (hora de Ecuador continental) del 19 de abril del año en curso en formato pdf a mi correo electrónico (mmorenozambrano@gmail.com).\nLa fecha de entrega de calificaciones del reporte la daré a conocer dependiendo del número de trabajos entregados."
   },
   {
     "objectID": "index.html#recomendaciones",
