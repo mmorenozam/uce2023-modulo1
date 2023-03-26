@@ -104,7 +104,7 @@ editor: visual
 ::: incremental
 -   Opción 1:
 
-    -   La estructura básica que espero de un reporte estadístico es : título, resumen, objetivos, metodología, resultados, conclusiones (bibliografía dependiendo si tiene sentido ponerla).
+    -   La estructura básica que espero de un reporte estadístico es : título, resumen, objetivos, metodología, resultados, conclusiones (bibliografía dependiendo si tiene sentido ponerla) y apéndice.
 
     -   En caso de presentar bibliografía, el estilo que más te agrade está bien.
 
@@ -112,9 +112,9 @@ editor: visual
 
 -   Opción 2:
 
-    -   Resolver las preguntas establecidas como sugerencia en el sitio web del curso en base a tablas de datos disponibles en librerías de R y compartidas con el resto de tablas de datos externas.
+    -   Resolver las preguntas establecidas en el sitio web del curso.
 
--   **ES IMPRESCINDIBLE** el presentar el código de R (script) usado en el reporte a manera de Apéndice, independientemente de la opción que optes para tu trabajo final.
+-   **ES IMPRESCINDIBLE** el presentar el código de R (script) usado en el reporte a manera de Apéndice, independientemente de la opción que optes para tu trabajo final. **Para la opción 1, en el apéndice debe contar también con el análisis exploratorio de los datos.**
 
 -   Envío del reporte final debe ser hasta antes de las 23H59 GMT-5 (hora de Ecuador continental) del 19 de abril del año en curso en formato pdf a mi correo electrónico (mmorenozambrano\@gmail.com).
 
@@ -128,7 +128,7 @@ editor: visual
 
 -   Aliento el uso de datos propios (¡este es un curso mayoritariamente práctico!)
 
--   No existe pregunta más tonta que la que no se hace
+-   Solo existe un tipo de "pregunta tonta": la que no se hace
 
 -   No sentirse intimidado por recursos extras y complementarios mayoritariamente en idioma inglés
 :::
