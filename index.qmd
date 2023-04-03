@@ -660,7 +660,7 @@ x y <- 1
 ```
 
 ::: incremental
-Cuando R importa tablas de datos, si encuentra nombres de columnas con números como el primer caracter, o con espacios vacíos dentro del mismo, reformatea automáticamente dichos valores.
+Cuando R importa tablas de datos, si encuentra nombres de columnas con números como el primer caracter reformatea automáticamente dichos valores.
 :::
 
 ## ¡A tener en cuenta antes de continuar! {visibility="uncounted"}

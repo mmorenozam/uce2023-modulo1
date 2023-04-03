@@ -249,7 +249,7 @@
     "href": "index.html#a-tener-en-cuenta-antes-de-continuar-4",
     "title": "Estadística aplicada con R",
     "section": "¡A tener en cuenta antes de continuar!",
-    "text": "¡A tener en cuenta antes de continuar!\n\n\nR NO reconoce nombres de objetos que comiencen con un número, o nombres que contengan espacios vacíos\n\n\n\n\n1x &lt;- 1\n\nError: &lt;text&gt;:1:2: unexpected symbol\n1: 1x\n     ^\n\n\n\n\n\nx y &lt;- 1\n\nError: &lt;text&gt;:1:3: unexpected symbol\n1: x y\n      ^\n\n\n\nCuando R importa tablas de datos, si encuentra nombres de columnas con números como el primer caracter, o con espacios vacíos dentro del mismo, reformatea automáticamente dichos valores."
+    "text": "¡A tener en cuenta antes de continuar!\n\n\nR NO reconoce nombres de objetos que comiencen con un número, o nombres que contengan espacios vacíos\n\n\n\n\n1x &lt;- 1\n\nError: &lt;text&gt;:1:2: unexpected symbol\n1: 1x\n     ^\n\n\n\n\n\nx y &lt;- 1\n\nError: &lt;text&gt;:1:3: unexpected symbol\n1: x y\n      ^\n\n\n\nCuando R importa tablas de datos, si encuentra nombres de columnas con números como el primer caracter reformatea automáticamente dichos valores."
   },
   {
     "objectID": "index.html#operaciones-estadísticas-básicas",
