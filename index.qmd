@@ -76,7 +76,7 @@ editor: visual
 
     -   Plataforma ZULIP
 
-    -   Email del instructor: mmorenozambrano\@gmail.com
+    -   Email del curso: appl.stats.2023\@proton.me
 :::
 
 ## Acerca del curso {visibility="uncounted"}
@@ -116,7 +116,7 @@ editor: visual
 
 -   **ES IMPRESCINDIBLE** el presentar el código de R (script) usado en el reporte a manera de Apéndice, independientemente de la opción que optes para tu trabajo final. **Para la opción 1, en el apéndice debe contar también con el análisis exploratorio de los datos.**
 
--   Envío del reporte final debe ser hasta antes de las 23H59 GMT-5 (hora de Ecuador continental) del 19 de abril del año en curso en formato pdf a mi correo electrónico (mmorenozambrano\@gmail.com).
+-   Envío del reporte final debe ser hasta antes de las 23H59 GMT-5 (hora de Ecuador continental) del 19 de abril del año en curso en formato pdf a mi correo electrónico (appl.stats.2023\@proton.me).
 
 -   La fecha de entrega de calificaciones del reporte la daré a conocer dependiendo del número de trabajos entregados.
 :::
