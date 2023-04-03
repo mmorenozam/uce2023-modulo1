@@ -270,7 +270,7 @@
     "href": "index.html#ejercicio-1.1",
     "title": "Estadística aplicada con R",
     "section": "Ejercicio 1.1",
-    "text": "Ejercicio 1.1\nEl siguiente vector contiene dos valores perdidos NA. La mayoría de funciones en R no lidian con datos perdidos a menos que les sea explícitamente indicado. Por medio de la ayuda de R (por ejemplo, ingresa ?mean() en la consola) encuentra la manera de indicarle a R que ignore los NA y realice los cálculos de la media aritmética, la mediana, la moda, la desviación estándar, la varianza y los cuartiles usando las funciones anteriormente enunciadas.\n\nej11 &lt;- c(108.5, 75.3, 67.5, 93.6, 153.8, 113.9, NA, 133.8, 47.8, 71.1, NA)\n\nTip: basta con que veas la ayuda de una sola función para revisar el argumento que tienes que modificar. El mismo argumento es común a todas las demás funciones"
+    "text": "Ejercicio 1.1\n\nDetermina la clase de los vectores x, y, z y las combinaciones c(x, y), c(z, x)"
   },
   {
     "objectID": "index.html#estadísticos-descriptivos-y-tablas-de-frecuencia",
@@ -347,7 +347,7 @@
     "href": "index.html#ejercicio-1.2",
     "title": "Estadística aplicada con R",
     "section": "Ejercicio 1.2",
-    "text": "Ejercicio 1.2\nCrea una tabla de frecuencia categorizando la variable bill_depth_mm y exportala a un archivo de Word en tu directorio de trabajo"
+    "text": "Ejercicio 1.2\n\nEn la lista_a que creamos anteriormente, ¿cuál es el valor en la columna 2, fila 4 de la tabla de datos almacenado como segundo objeto de esta lista?"
   },
   {
     "objectID": "index.html#gráficos-listos-para-publicación",
@@ -418,5 +418,26 @@
     "title": "Estadística aplicada con R",
     "section": "¡A tener en cuenta antes de continuar!",
     "text": "¡A tener en cuenta antes de continuar!\n\n\nExisten varias formas de correr tu código en R\n\nCon el ícono “Run” en la esquina superior derecha de la Ventana del editor.\nDesde una ventana del prompt de Windows (usuarios intermedios y avanzados).\nY mi preferida: el atajo “Ctrl + Enter”. Esta última tiene la ventaja de correr línea por línea el código y también de correr únicamente sobre líneas previamente seleccionadas."
+  },
+  {
+    "objectID": "index.html#ejercicio-1.3",
+    "href": "index.html#ejercicio-1.3",
+    "title": "Estadística aplicada con R",
+    "section": "Ejercicio 1.3",
+    "text": "Ejercicio 1.3\nEl siguiente vector contiene dos valores perdidos NA. La mayoría de funciones en R no lidian con datos perdidos a menos que les sea explícitamente indicado. Por medio de la ayuda de R (por ejemplo, ingresa ?mean() en la consola) encuentra la manera de indicarle a R que ignore los NA y realice los cálculos de la media aritmética, la mediana, la moda, la desviación estándar, la varianza y los cuartiles usando las funciones anteriormente enunciadas.\n\nej11 &lt;- c(108.5, 75.3, 67.5, 93.6, 153.8, 113.9, NA, 133.8, 47.8, 71.1, NA)\n\nTip: basta con que veas la ayuda de una sola función para revisar el argumento que tienes que modificar. El mismo argumento es común a todas las demás funciones"
+  },
+  {
+    "objectID": "index.html#ejercicio-1.4",
+    "href": "index.html#ejercicio-1.4",
+    "title": "Estadística aplicada con R",
+    "section": "Ejercicio 1.4",
+    "text": "Ejercicio 1.4\n\nR cuenta con una amplia diversidad de tablas de datos pre-instaladas. Para invocarlas podemos usar el comando data() con el nombre de la tabla dentro de los paréntesis. Calcula los estadísticos descriptivos de la tabla de datos de nombre “iris”."
+  },
+  {
+    "objectID": "index.html#ejercicio-1.5",
+    "href": "index.html#ejercicio-1.5",
+    "title": "Estadística aplicada con R",
+    "section": "Ejercicio 1.5",
+    "text": "Ejercicio 1.5\nCrea una tabla de frecuencia categorizando la variable bill_depth_mm y exportala a un archivo de Word en tu directorio de trabajo"
   }
 ]

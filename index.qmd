@@ -343,6 +343,17 @@ str(vector_e)
 -   Pero ya hablaremos de comandos y librerías en breve...
 :::
 
+## Ejercicio 1.1
+
+-   Determina la clase de los vectores `x`, `y`, `z` y las combinaciones `c(x, y)`, `c(z, x)`
+
+```{r echo=F}
+x <- c("Lunes", "Martes", "Miércoles")
+y <- c(F, T, F, T, T, T)
+z <- c(2+3i, 1i, sqrt(2i))
+```
+
+
 ## Tablas de datos {auto-animate="true"}
 
 ::: incremental
@@ -443,6 +454,10 @@ lista_a[[2]]
 ```{r echo=T}
 lista_a[[2]][3,1]
 ```
+
+## Ejercicio 1.2
+
+-   En la `lista_a` que creamos anteriormente, ¿cuál es el valor en la columna 2, fila 4 de la tabla de datos almacenado como segundo objeto de esta lista?
 
 ## Librerías de R
 
@@ -742,7 +757,7 @@ var(x)
 quantile(x)
 ```
 
-## Ejercicio 1.1
+## Ejercicio 1.3
 
 El siguiente vector contiene dos valores perdidos `NA`. La mayoría de funciones en R no lidian con datos perdidos a menos que les sea explícitamente indicado. Por medio de la ayuda de R (por ejemplo, ingresa `?mean()` en la consola) encuentra la manera de indicarle a R que ignore los `NA` y realice los cálculos de la media aritmética, la mediana, la moda, la desviación estándar, la varianza y los cuartiles usando las funciones anteriormente enunciadas. 
 
@@ -787,6 +802,10 @@ La forma mas sencilla de calcular los estadísticos descriptivos de una tabla de
 library(palmerpenguins)
 summary(penguins)
 ```
+
+## Ejercicio 1.4
+
+-   R cuenta con una amplia diversidad de tablas de datos pre-instaladas. Para invocarlas podemos usar el comando `data()` con el nombre de la tabla dentro de los paréntesis. Calcula los estadísticos descriptivos de la tabla de datos de nombre "iris".
 
 ## Tablas de frecuencia
 
@@ -913,7 +932,7 @@ detach(penguins) # IMPORTANTISIMO!
 
 ![](images/tabla_word.png){fig-align="center"}
 
-## Ejercicio 1.2
+## Ejercicio 1.5
 
 Crea una tabla de frecuencia categorizando la variable `bill_depth_mm` y exportala a un archivo de Word en tu directorio de trabajo
 
