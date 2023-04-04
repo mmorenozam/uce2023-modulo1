@@ -347,7 +347,7 @@ str(vector_e)
 
 -   Determina la clase de los vectores `x`, `y`, `z` y las combinaciones `c(x, y)`, `c(z, x)`
 
-```{r echo=F}
+```{r echo=T}
 x <- c("Lunes", "Martes", "Miércoles")
 y <- c(F, T, F, T, T, T)
 z <- c(2+3i, 1i, sqrt(2i))
@@ -714,7 +714,7 @@ median(x)
 ```
 
 ::: incremental
--   Moda (R no tiene una función base para la moda, una solución es la librería `moodest`)
+-   Moda (R no tiene una función base para la moda, una solución es la librería `modeest`)
 :::
 
 . . .

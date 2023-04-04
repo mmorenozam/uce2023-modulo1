@@ -775,6 +775,11 @@ Mauricio Moreno, PhD
 <ul>
 <li>Determina la clase de los vectores <code>x</code>, <code>y</code>, <code>z</code> y las combinaciones <code>c(x, y)</code>, <code>c(z, x)</code></li>
 </ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Lunes"</span>, <span class="st">"Martes"</span>, <span class="st">"Miércoles"</span>)</span>
+<span id="cb11-2"><a href="#cb11-2"></a>y <span class="ot">&lt;-</span> <span class="fu">c</span>(F, T, F, T, T, T)</span>
+<span id="cb11-3"><a href="#cb11-3"></a>z <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span><span class="sc">+</span>3i, 1i, <span class="fu">sqrt</span>(2i))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="tablas-de-datos" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Tablas de datos</h2>
@@ -786,8 +791,8 @@ Mauricio Moreno, PhD
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb11-1" class="hljs-ln-code"><a href="#cb11-1"></a>tabla <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">variable1 =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),</span>
-<span id="cb11-2" class="hljs-ln-code"><a href="#cb11-2"></a>                    <span class="at">variable2 =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>, <span class="st">"E"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb12-1" class="hljs-ln-code"><a href="#cb12-1"></a>tabla <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">variable1 =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),</span>
+<span id="cb12-2" class="hljs-ln-code"><a href="#cb12-2"></a>                    <span class="at">variable2 =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>, <span class="st">"E"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -798,10 +803,10 @@ Mauricio Moreno, PhD
 <li><p>¿Cómo creo tablas de datos en R?</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb12-1" class="hljs-ln-code"><a href="#cb12-1"></a>tabla <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">variable1 =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),</span>
-<span id="cb12-2" class="hljs-ln-code"><a href="#cb12-2"></a>                    <span class="at">variable2 =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>, <span class="st">"E"</span>))</span>
-<span id="cb12-3" class="hljs-ln-code"><a href="#cb12-3"></a></span>
-<span id="cb12-4" class="hljs-ln-code"><a href="#cb12-4"></a>tabla</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb13-1" class="hljs-ln-code"><a href="#cb13-1"></a>tabla <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">variable1 =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),</span>
+<span id="cb13-2" class="hljs-ln-code"><a href="#cb13-2"></a>                    <span class="at">variable2 =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>, <span class="st">"E"</span>))</span>
+<span id="cb13-3" class="hljs-ln-code"><a href="#cb13-3"></a></span>
+<span id="cb13-4" class="hljs-ln-code"><a href="#cb13-4"></a>tabla</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  variable1 variable2
 1         1         A
@@ -826,8 +831,8 @@ Mauricio Moreno, PhD
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1"></a>lista <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">lista1 =</span> vector_a,</span>
-<span id="cb14-2" class="hljs-ln-code"><a href="#cb14-2"></a>              <span class="at">lista2 =</span> tabla)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb15-1" class="hljs-ln-code"><a href="#cb15-1"></a>lista <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">lista1 =</span> vector_a,</span>
+<span id="cb15-2" class="hljs-ln-code"><a href="#cb15-2"></a>              <span class="at">lista2 =</span> tabla)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -837,9 +842,9 @@ Mauricio Moreno, PhD
 <li>Arreglo multidimensional de elementos no necesariamente del mismo tipo ni misma longitud.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb15-1" class="hljs-ln-code"><a href="#cb15-1"></a>lista_a <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">lista1 =</span> vector_a,</span>
-<span id="cb15-2" class="hljs-ln-code"><a href="#cb15-2"></a>                <span class="at">lista2 =</span> tabla)</span>
-<span id="cb15-3" class="hljs-ln-code"><a href="#cb15-3"></a>lista_a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb16-1" class="hljs-ln-code"><a href="#cb16-1"></a>lista_a <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">lista1 =</span> vector_a,</span>
+<span id="cb16-2" class="hljs-ln-code"><a href="#cb16-2"></a>                <span class="at">lista2 =</span> tabla)</span>
+<span id="cb16-3" class="hljs-ln-code"><a href="#cb16-3"></a>lista_a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$lista1
 [1] 1 2 3
@@ -865,7 +870,7 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>vector_a[<span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>vector_a[<span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
@@ -878,7 +883,7 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>tabla[<span class="dv">3</span>,<span class="dv">1</span>] <span class="co"># [fila, columna]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>tabla[<span class="dv">3</span>,<span class="dv">1</span>] <span class="co"># [fila, columna]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
@@ -892,7 +897,7 @@ $lista2
 </ul>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>lista_a[[<span class="dv">2</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>lista_a[[<span class="dv">2</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  variable1 variable2
 1         1         A
@@ -910,7 +915,7 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>lista_a[[<span class="dv">2</span>]][<span class="dv">3</span>,<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>lista_a[[<span class="dv">2</span>]][<span class="dv">3</span>,<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
@@ -962,7 +967,7 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div>
 <ul>
@@ -972,7 +977,7 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"palmerpenguins"</span>,<span class="st">"fdth"</span>, <span class="st">"flextable"</span>, <span class="st">"readxl"</span>, <span class="st">"modeest"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"palmerpenguins"</span>,<span class="st">"fdth"</span>, <span class="st">"flextable"</span>, <span class="st">"readxl"</span>, <span class="st">"modeest"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
@@ -982,7 +987,7 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -996,8 +1001,8 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28" data-code-line-numbers="1|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="fu">library</span>(readxl)                           <span class="co"># invocamos la librería</span></span>
-<span id="cb28-2"><a href="#cb28-2"></a>rot_berlin <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="fu">file.choose</span>())   <span class="co"># creamos un objeto (tabla de datos) y llamamos la función read_excel</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29" data-code-line-numbers="1|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">library</span>(readxl)                           <span class="co"># invocamos la librería</span></span>
+<span id="cb29-2"><a href="#cb29-2"></a>rot_berlin <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="fu">file.choose</span>())   <span class="co"># creamos un objeto (tabla de datos) y llamamos la función read_excel</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div>
 <ul>
@@ -1024,18 +1029,18 @@ $lista2
 <section id="importar-tablas-de-datos-a-r-2" class="slide level2" data-visibility="uncounted" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Importar tablas de datos a R</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29" data-code-line-numbers="1|2|3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb29-1" class="hljs-ln-code"><a href="#cb29-1"></a><span class="fu">setwd</span>(<span class="st">"C:/Users/mmore/Documents/cursos_uce_2023/datos/"</span>) <span class="co"># directorio de trabajo</span></span>
-<span id="cb29-2" class="hljs-ln-code"><a href="#cb29-2"></a><span class="fu">library</span>(readxl)                           <span class="co"># invocamos la librería</span></span>
-<span id="cb29-3" class="hljs-ln-code"><a href="#cb29-3"></a>rot_berlin <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"rotXLS.xlsx"</span>)   <span class="co"># creamos un objeto (tabla de datos) y llamamos la función read_excel</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30" data-code-line-numbers="1|2|3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb30-1" class="hljs-ln-code"><a href="#cb30-1"></a><span class="fu">setwd</span>(<span class="st">"C:/Users/mmore/Documents/cursos_uce_2023/datos/"</span>) <span class="co"># directorio de trabajo</span></span>
+<span id="cb30-2" class="hljs-ln-code"><a href="#cb30-2"></a><span class="fu">library</span>(readxl)                           <span class="co"># invocamos la librería</span></span>
+<span id="cb30-3" class="hljs-ln-code"><a href="#cb30-3"></a>rot_berlin <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"rotXLS.xlsx"</span>)   <span class="co"># creamos un objeto (tabla de datos) y llamamos la función read_excel</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="importar-tablas-de-datos-a-r-3" class="slide level2" data-visibility="uncounted" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Importar tablas de datos a R</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb30-1" class="hljs-ln-code"><a href="#cb30-1"></a><span class="fu">setwd</span>(<span class="st">"C:/Users/mmore/Documents/cursos_uce_2023/datos/"</span>) </span>
-<span id="cb30-2" class="hljs-ln-code"><a href="#cb30-2"></a><span class="fu">library</span>(readxl)                           <span class="co"># invocamos la librería</span></span>
-<span id="cb30-3" class="hljs-ln-code"><a href="#cb30-3"></a>rot_berlin <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"rotXLS.xlsx"</span>)   <span class="co"># creamos un objeto (tabla de datos) y llamamos la función read_excel</span></span>
-<span id="cb30-4" class="hljs-ln-code"><a href="#cb30-4"></a><span class="fu">head</span>(rot_berlin)                          <span class="co"># chequeamos que nuestro archivo se halla importado correctamente</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb31-1" class="hljs-ln-code"><a href="#cb31-1"></a><span class="fu">setwd</span>(<span class="st">"C:/Users/mmore/Documents/cursos_uce_2023/datos/"</span>) </span>
+<span id="cb31-2" class="hljs-ln-code"><a href="#cb31-2"></a><span class="fu">library</span>(readxl)                           <span class="co"># invocamos la librería</span></span>
+<span id="cb31-3" class="hljs-ln-code"><a href="#cb31-3"></a>rot_berlin <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"rotXLS.xlsx"</span>)   <span class="co"># creamos un objeto (tabla de datos) y llamamos la función read_excel</span></span>
+<span id="cb31-4" class="hljs-ln-code"><a href="#cb31-4"></a><span class="fu">head</span>(rot_berlin)                          <span class="co"># chequeamos que nuestro archivo se halla importado correctamente</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 12
   date                cases  week incidence    FM    RSK SHK_TAG    PM    TMK
@@ -1064,18 +1069,18 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>){</span>
-<span id="cb32-2"><a href="#cb32-2"></a>  x <span class="ot">=</span> <span class="dv">0</span> <span class="sc">+</span> i</span>
-<span id="cb32-3"><a href="#cb32-3"></a>  <span class="fu">print</span>(x)</span>
-<span id="cb32-4"><a href="#cb32-4"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>){</span>
+<span id="cb33-2"><a href="#cb33-2"></a>  x <span class="ot">=</span> <span class="dv">0</span> <span class="sc">+</span> i</span>
+<span id="cb33-3"><a href="#cb33-3"></a>  <span class="fu">print</span>(x)</span>
+<span id="cb33-4"><a href="#cb33-4"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>){</span>
-<span id="cb33-2"><a href="#cb33-2"></a>x <span class="ot">=</span> <span class="dv">0</span> <span class="sc">+</span> i</span>
-<span id="cb33-3"><a href="#cb33-3"></a><span class="fu">print</span>(x)</span>
-<span id="cb33-4"><a href="#cb33-4"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>){</span>
+<span id="cb34-2"><a href="#cb34-2"></a>x <span class="ot">=</span> <span class="dv">0</span> <span class="sc">+</span> i</span>
+<span id="cb34-3"><a href="#cb34-3"></a><span class="fu">print</span>(x)</span>
+<span id="cb34-4"><a href="#cb34-4"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1100,10 +1105,10 @@ $lista2
 <li>Una buena práctica de programación es comentar qué hace tu código con el símbolo <code>#</code></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>){ <span class="co"># este loop imprime números del 1 al 20 </span></span>
-<span id="cb34-2"><a href="#cb34-2"></a>  x <span class="ot">=</span> <span class="dv">0</span> <span class="sc">+</span> i</span>
-<span id="cb34-3"><a href="#cb34-3"></a>  <span class="fu">print</span>(x)</span>
-<span id="cb34-4"><a href="#cb34-4"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>){ <span class="co"># este loop imprime números del 1 al 20 </span></span>
+<span id="cb35-2"><a href="#cb35-2"></a>  x <span class="ot">=</span> <span class="dv">0</span> <span class="sc">+</span> i</span>
+<span id="cb35-3"><a href="#cb35-3"></a>  <span class="fu">print</span>(x)</span>
+<span id="cb35-4"><a href="#cb35-4"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div>
 <ul>
@@ -1112,11 +1117,11 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="co"># Este loop quizá me sirva después, lo comento</span></span>
-<span id="cb35-2"><a href="#cb35-2"></a><span class="co"># for (i in 1:20){ # este loop imprime números del 1 al 20</span></span>
-<span id="cb35-3"><a href="#cb35-3"></a><span class="co">#   x = 0 + i</span></span>
-<span id="cb35-4"><a href="#cb35-4"></a><span class="co">#   print(x)</span></span>
-<span id="cb35-5"><a href="#cb35-5"></a><span class="co"># }</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a><span class="co"># Este loop quizá me sirva después, lo comento</span></span>
+<span id="cb36-2"><a href="#cb36-2"></a><span class="co"># for (i in 1:20){ # este loop imprime números del 1 al 20</span></span>
+<span id="cb36-3"><a href="#cb36-3"></a><span class="co">#   x = 0 + i</span></span>
+<span id="cb36-4"><a href="#cb36-4"></a><span class="co">#   print(x)</span></span>
+<span id="cb36-5"><a href="#cb36-5"></a><span class="co"># }</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1129,7 +1134,7 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a>?<span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a>?<span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
@@ -1149,7 +1154,7 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a>1x <span class="ot">&lt;-</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a>1x <span class="ot">&lt;-</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error: &lt;text&gt;:1:2: unexpected symbol
 1: 1x
@@ -1159,7 +1164,7 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a>x y <span class="ot">&lt;-</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1"></a>x y <span class="ot">&lt;-</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error: &lt;text&gt;:1:3: unexpected symbol
 1: x y
@@ -1193,8 +1198,8 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">6.5</span>, <span class="fl">5.5</span>, <span class="fl">8.9</span>, <span class="fl">10.5</span>, <span class="fl">8.7</span>, <span class="fl">6.9</span>, <span class="fl">5.9</span>, <span class="fl">6.5</span>, <span class="fl">4.7</span>, <span class="fl">5.6</span>, <span class="fl">4.8</span>, <span class="fl">8.9</span>, <span class="fl">9.9</span>, <span class="fl">10.7</span>, <span class="fl">5.3</span>)</span>
-<span id="cb41-2"><a href="#cb41-2"></a><span class="fu">mean</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">6.5</span>, <span class="fl">5.5</span>, <span class="fl">8.9</span>, <span class="fl">10.5</span>, <span class="fl">8.7</span>, <span class="fl">6.9</span>, <span class="fl">5.9</span>, <span class="fl">6.5</span>, <span class="fl">4.7</span>, <span class="fl">5.6</span>, <span class="fl">4.8</span>, <span class="fl">8.9</span>, <span class="fl">9.9</span>, <span class="fl">10.7</span>, <span class="fl">5.3</span>)</span>
+<span id="cb42-2"><a href="#cb42-2"></a><span class="fu">mean</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 7.286667</code></pre>
 </div>
@@ -1207,21 +1212,21 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a><span class="fu">median</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1"></a><span class="fu">median</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 6.5</code></pre>
 </div>
 </div>
 <div>
 <ul>
-<li class="fragment">Moda (R no tiene una función base para la moda, una solución es la librería <code>moodest</code>)</li>
+<li class="fragment">Moda (R no tiene una función base para la moda, una solución es la librería <code>modeest</code>)</li>
 </ul>
 </div>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a><span class="fu">library</span>(modeest)</span>
-<span id="cb45-2"><a href="#cb45-2"></a><span class="fu">mlv</span>(x, <span class="at">method =</span> <span class="st">"mfv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1"></a><span class="fu">library</span>(modeest)</span>
+<span id="cb46-2"><a href="#cb46-2"></a><span class="fu">mlv</span>(x, <span class="at">method =</span> <span class="st">"mfv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 6.5 8.9</code></pre>
 </div>
@@ -1237,7 +1242,7 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a><span class="fu">sd</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1"></a><span class="fu">sd</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2.107425</code></pre>
 </div>
@@ -1250,11 +1255,11 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1"></a><span class="fu">var</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1"></a><span class="fu">var</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4.441238</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1"></a>(<span class="fu">sd</span>(x))<span class="sc">^</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1"></a>(<span class="fu">sd</span>(x))<span class="sc">^</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4.441238</code></pre>
 </div>
@@ -1267,7 +1272,7 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1"></a><span class="fu">quantile</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1"></a><span class="fu">quantile</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   0%   25%   50%   75%  100% 
  4.70  5.55  6.50  8.90 10.70 </code></pre>
@@ -1279,7 +1284,7 @@ $lista2
 <h2>Ejercicio 1.3</h2>
 <p>El siguiente vector contiene dos valores perdidos <code>NA</code>. La mayoría de funciones en R no lidian con datos perdidos a menos que les sea explícitamente indicado. Por medio de la ayuda de R (por ejemplo, ingresa <code>?mean()</code> en la consola) encuentra la manera de indicarle a R que ignore los <code>NA</code> y realice los cálculos de la media aritmética, la mediana, la moda, la desviación estándar, la varianza y los cuartiles usando las funciones anteriormente enunciadas.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1"></a>ej11 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">108.5</span>, <span class="fl">75.3</span>, <span class="fl">67.5</span>, <span class="fl">93.6</span>, <span class="fl">153.8</span>, <span class="fl">113.9</span>, <span class="cn">NA</span>, <span class="fl">133.8</span>, <span class="fl">47.8</span>, <span class="fl">71.1</span>, <span class="cn">NA</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1"></a>ej11 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">108.5</span>, <span class="fl">75.3</span>, <span class="fl">67.5</span>, <span class="fl">93.6</span>, <span class="fl">153.8</span>, <span class="fl">113.9</span>, <span class="cn">NA</span>, <span class="fl">133.8</span>, <span class="fl">47.8</span>, <span class="fl">71.1</span>, <span class="cn">NA</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>Tip: basta con que veas la ayuda de una sola función para revisar el argumento que tienes que modificar. El mismo argumento es común a todas las demás funciones</strong></p>
 </section>
@@ -1323,8 +1328,8 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1"></a><span class="fu">library</span>(palmerpenguins)</span>
-<span id="cb56-2"><a href="#cb56-2"></a><span class="fu">summary</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb57-2"><a href="#cb57-2"></a><span class="fu">summary</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>      species          island    bill_length_mm  bill_depth_mm  
  Adelie   :152   Biscoe   :168   Min.   :32.10   Min.   :13.10  
@@ -1380,8 +1385,8 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb58" data-code-line-numbers="1|2"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb58-1" class="hljs-ln-code"><a href="#cb58-1"></a><span class="fu">library</span>(fdth)                     <span class="co"># ftdh es una librería que nos permite calcular tablas de frecuencia</span></span>
-<span id="cb58-2" class="hljs-ln-code"><a href="#cb58-2"></a><span class="fu">attach</span>(penguins)                  <span class="co"># attach es un comando que convierte las columnas en objetos</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb59" data-code-line-numbers="1|2"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb59-1" class="hljs-ln-code"><a href="#cb59-1"></a><span class="fu">library</span>(fdth)                     <span class="co"># ftdh es una librería que nos permite calcular tablas de frecuencia</span></span>
+<span id="cb59-2" class="hljs-ln-code"><a href="#cb59-2"></a><span class="fu">attach</span>(penguins)                  <span class="co"># attach es un comando que convierte las columnas en objetos</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1391,9 +1396,9 @@ $lista2
 <li>A partir de una variable categórica</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb59" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb59-1" class="hljs-ln-code"><a href="#cb59-1"></a><span class="fu">library</span>(fdth)                   <span class="co"># fdth es una librería que nos permite calcular tablas de frecuencia</span></span>
-<span id="cb59-2" class="hljs-ln-code"><a href="#cb59-2"></a><span class="fu">attach</span>(penguins)                <span class="co"># attach es un comando que convierte las columnas en objetos</span></span>
-<span id="cb59-3" class="hljs-ln-code"><a href="#cb59-3"></a><span class="fu">head</span>(penguins)                  <span class="co"># le damos un vistazo a las variables (columnas)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb60" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb60-1" class="hljs-ln-code"><a href="#cb60-1"></a><span class="fu">library</span>(fdth)                   <span class="co"># fdth es una librería que nos permite calcular tablas de frecuencia</span></span>
+<span id="cb60-2" class="hljs-ln-code"><a href="#cb60-2"></a><span class="fu">attach</span>(penguins)                <span class="co"># attach es un comando que convierte las columnas en objetos</span></span>
+<span id="cb60-3" class="hljs-ln-code"><a href="#cb60-3"></a><span class="fu">head</span>(penguins)                  <span class="co"># le damos un vistazo a las variables (columnas)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 8
   species island    bill_length_mm bill_depth_mm flipper_l…¹ body_…² sex    year
@@ -1414,9 +1419,9 @@ $lista2
 <li>A partir de una variable categórica</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb61" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb61-1" class="hljs-ln-code"><a href="#cb61-1"></a><span class="fu">library</span>(fdth)                   <span class="co"># fdth es una librería que nos permite calcular tablas de frecuencia</span></span>
-<span id="cb61-2" class="hljs-ln-code"><a href="#cb61-2"></a><span class="fu">attach</span>(penguins)                <span class="co"># attach es un comando que convierte las columnas en objetos</span></span>
-<span id="cb61-3" class="hljs-ln-code"><a href="#cb61-3"></a>tabla_frec1 <span class="ot">&lt;-</span> <span class="fu">fdt_cat</span>(species) <span class="co"># fdt_cat es la función de ftdh que calcula la tabla de frecuencia</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb62" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb62-1" class="hljs-ln-code"><a href="#cb62-1"></a><span class="fu">library</span>(fdth)                   <span class="co"># fdth es una librería que nos permite calcular tablas de frecuencia</span></span>
+<span id="cb62-2" class="hljs-ln-code"><a href="#cb62-2"></a><span class="fu">attach</span>(penguins)                <span class="co"># attach es un comando que convierte las columnas en objetos</span></span>
+<span id="cb62-3" class="hljs-ln-code"><a href="#cb62-3"></a>tabla_frec1 <span class="ot">&lt;-</span> <span class="fu">fdt_cat</span>(species) <span class="co"># fdt_cat es la función de ftdh que calcula la tabla de frecuencia</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="tablas-de-frecuencia-4" class="slide level2" data-visibility="uncounted" data-auto-animate="true">
@@ -1425,10 +1430,10 @@ $lista2
 <li>A partir de una variable categórica</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb62" data-code-line-numbers="4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb62-1" class="hljs-ln-code"><a href="#cb62-1"></a><span class="fu">library</span>(fdth)                   <span class="co"># fdth es una librería que nos permite calcular tablas de frecuencia</span></span>
-<span id="cb62-2" class="hljs-ln-code"><a href="#cb62-2"></a><span class="fu">attach</span>(penguins)                <span class="co"># attach es un comando que convierte las columnas en objetos</span></span>
-<span id="cb62-3" class="hljs-ln-code"><a href="#cb62-3"></a>tabla_frec1 <span class="ot">&lt;-</span> <span class="fu">fdt_cat</span>(species) <span class="co"># fdt_cat es la función de ftdh que calcula la tabla de frecuencia</span></span>
-<span id="cb62-4" class="hljs-ln-code"><a href="#cb62-4"></a>tabla_frec1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb63" data-code-line-numbers="4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb63-1" class="hljs-ln-code"><a href="#cb63-1"></a><span class="fu">library</span>(fdth)                   <span class="co"># fdth es una librería que nos permite calcular tablas de frecuencia</span></span>
+<span id="cb63-2" class="hljs-ln-code"><a href="#cb63-2"></a><span class="fu">attach</span>(penguins)                <span class="co"># attach es un comando que convierte las columnas en objetos</span></span>
+<span id="cb63-3" class="hljs-ln-code"><a href="#cb63-3"></a>tabla_frec1 <span class="ot">&lt;-</span> <span class="fu">fdt_cat</span>(species) <span class="co"># fdt_cat es la función de ftdh que calcula la tabla de frecuencia</span></span>
+<span id="cb63-4" class="hljs-ln-code"><a href="#cb63-4"></a>tabla_frec1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  Category   f   rf rf(%)  cf  cf(%)
     Adelie 152 0.44 44.19 152  44.19
@@ -1453,7 +1458,7 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb64" data-code-line-numbers="1"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb64-1" class="hljs-ln-code"><a href="#cb64-1"></a>tabla_frec2 <span class="ot">&lt;-</span> <span class="fu">fdt</span>(body_mass_g, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb65" data-code-line-numbers="1"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb65-1" class="hljs-ln-code"><a href="#cb65-1"></a>tabla_frec2 <span class="ot">&lt;-</span> <span class="fu">fdt</span>(body_mass_g, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1463,8 +1468,8 @@ $lista2
 <li>Categorizando una variable continua</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb65" data-code-line-numbers="2"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb65-1" class="hljs-ln-code"><a href="#cb65-1"></a>tabla_frec2 <span class="ot">&lt;-</span> <span class="fu">fdt</span>(body_mass_g, <span class="at">na.rm =</span> T)</span>
-<span id="cb65-2" class="hljs-ln-code"><a href="#cb65-2"></a>tabla_frec2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb66" data-code-line-numbers="2"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb66-1" class="hljs-ln-code"><a href="#cb66-1"></a>tabla_frec2 <span class="ot">&lt;-</span> <span class="fu">fdt</span>(body_mass_g, <span class="at">na.rm =</span> T)</span>
+<span id="cb66-2" class="hljs-ln-code"><a href="#cb66-2"></a>tabla_frec2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> Class limits  f   rf rf(%)  cf cf(%)
   [2673,3042) 11 0.03  3.20  11  3.20
@@ -1494,12 +1499,12 @@ $lista2
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb67" data-code-line-numbers="1|2|3|4|5|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1"></a><span class="fu">library</span>(flextable)</span>
-<span id="cb67-2"><a href="#cb67-2"></a>ft1 <span class="ot">&lt;-</span> <span class="fu">flextable</span>(tabla_frec1)</span>
-<span id="cb67-3"><a href="#cb67-3"></a>ft2 <span class="ot">&lt;-</span> <span class="fu">flextable</span>(tabla_frec2[[<span class="dv">1</span>]]) <span class="co"># tabla_frec2 es una lista</span></span>
-<span id="cb67-4"><a href="#cb67-4"></a><span class="fu">save_as_docx</span>(<span class="st">"Tabla_1"</span> <span class="ot">=</span> ft1, <span class="st">"Tabla_2"</span> <span class="ot">=</span> ft2, </span>
-<span id="cb67-5"><a href="#cb67-5"></a>             <span class="at">path =</span> <span class="st">"C:/Users/mmore/Documents/cursos_uce_2023/est-apl-uce-2023/datos/tablas.docx"</span>)</span>
-<span id="cb67-6"><a href="#cb67-6"></a><span class="fu">detach</span>(penguins) <span class="co"># IMPORTANTISIMO!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb68" data-code-line-numbers="1|2|3|4|5|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1"></a><span class="fu">library</span>(flextable)</span>
+<span id="cb68-2"><a href="#cb68-2"></a>ft1 <span class="ot">&lt;-</span> <span class="fu">flextable</span>(tabla_frec1)</span>
+<span id="cb68-3"><a href="#cb68-3"></a>ft2 <span class="ot">&lt;-</span> <span class="fu">flextable</span>(tabla_frec2[[<span class="dv">1</span>]]) <span class="co"># tabla_frec2 es una lista</span></span>
+<span id="cb68-4"><a href="#cb68-4"></a><span class="fu">save_as_docx</span>(<span class="st">"Tabla_1"</span> <span class="ot">=</span> ft1, <span class="st">"Tabla_2"</span> <span class="ot">=</span> ft2, </span>
+<span id="cb68-5"><a href="#cb68-5"></a>             <span class="at">path =</span> <span class="st">"C:/Users/mmore/Documents/cursos_uce_2023/est-apl-uce-2023/datos/tablas.docx"</span>)</span>
+<span id="cb68-6"><a href="#cb68-6"></a><span class="fu">detach</span>(penguins) <span class="co"># IMPORTANTISIMO!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">

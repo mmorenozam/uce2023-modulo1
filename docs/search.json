@@ -256,7 +256,7 @@
     "href": "index.html#operaciones-estadísticas-básicas",
     "title": "Estadística aplicada con R",
     "section": "Operaciones estadísticas básicas",
-    "text": "Operaciones estadísticas básicas\n\n\nMedia aritmética\n\n\n\n\nx &lt;- c(6.5, 5.5, 8.9, 10.5, 8.7, 6.9, 5.9, 6.5, 4.7, 5.6, 4.8, 8.9, 9.9, 10.7, 5.3)\nmean(x)\n\n[1] 7.286667\n\n\n\n\nMediana\n\n\n\n\n\nmedian(x)\n\n[1] 6.5\n\n\n\n\nModa (R no tiene una función base para la moda, una solución es la librería moodest)\n\n\n\n\n\nlibrary(modeest)\nmlv(x, method = \"mfv\")\n\n[1] 6.5 8.9"
+    "text": "Operaciones estadísticas básicas\n\n\nMedia aritmética\n\n\n\n\nx &lt;- c(6.5, 5.5, 8.9, 10.5, 8.7, 6.9, 5.9, 6.5, 4.7, 5.6, 4.8, 8.9, 9.9, 10.7, 5.3)\nmean(x)\n\n[1] 7.286667\n\n\n\n\nMediana\n\n\n\n\n\nmedian(x)\n\n[1] 6.5\n\n\n\n\nModa (R no tiene una función base para la moda, una solución es la librería modeest)\n\n\n\n\n\nlibrary(modeest)\nmlv(x, method = \"mfv\")\n\n[1] 6.5 8.9"
   },
   {
     "objectID": "index.html#operaciones-estadísticas-básicas-1",
@@ -270,7 +270,7 @@
     "href": "index.html#ejercicio-1.1",
     "title": "Estadística aplicada con R",
     "section": "Ejercicio 1.1",
-    "text": "Ejercicio 1.1\n\nDetermina la clase de los vectores x, y, z y las combinaciones c(x, y), c(z, x)"
+    "text": "Ejercicio 1.1\n\nDetermina la clase de los vectores x, y, z y las combinaciones c(x, y), c(z, x)\n\n\nx &lt;- c(\"Lunes\", \"Martes\", \"Miércoles\")\ny &lt;- c(F, T, F, T, T, T)\nz &lt;- c(2+3i, 1i, sqrt(2i))"
   },
   {
     "objectID": "index.html#estadísticos-descriptivos-y-tablas-de-frecuencia",
